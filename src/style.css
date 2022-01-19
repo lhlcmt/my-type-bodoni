@@ -70,3 +70,41 @@ html {
   background-color: var(--colour1);
   color: var(--colour2);
 }
+
+.navigation-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    'logo nav'
+    'mark nav';
+}
+
+.slanted-logo-small {
+  grid-area: logo;
+  margin: 1rem;
+}
+
+.footer-nav {
+  grid-area: nav;
+  text-align: right;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer-nav-item {
+  text-decoration: none;
+  color: var(--colour1);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.lhlcmt-mark {
+  color: var(--colour1);
+  opacity: 50%;
+  font-size: 11px;
+  grid-area: mark;
+  margin: .3rem;
+}

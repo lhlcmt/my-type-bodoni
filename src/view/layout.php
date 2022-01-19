@@ -22,15 +22,15 @@
       <?php echo $content;?>
 
 
-    <footer>
-        <ul>
-            <li><a href="#origin">origin</a></li>
-            <li><a href="#use">use</a></li>
-            <li><a href="#variations">variations</a></li>
-            <li><a href="#today">today</a></li>
+    <footer class="navigation-footer">
+        <img class="slanted-logo-small" src="assets/slanted-logo-small.png" height="93" alt="slanted small logo">
+        <ul class="footer-nav">
+            <li><a class="footer-nav-item" href="#origin">ORIGIN</a></li>
+            <li><a class="footer-nav-item" href="#use">USE</a></li>
+            <li><a class="footer-nav-item" href="#variations">VARIATIONS</a></li>
+            <li><a class="footer-nav-item" href="#today">TODAY</a></li>
         </ul>
-        <img src="assets/slanted-logo-small.png" height="70" alt="slanted small logo">
-        <p>made with <img src="assets/heart-icon.svg" height="10" alt="love"> by lhlcmt</p>
+        <a href="https://léah.be/" target="_blank" class="lhlcmt-mark">made with <img src="assets/heart-icon.svg" height="8" alt="love"> by lhlcmt</a>
     </footer>
 
   <?php echo $js; ?>
