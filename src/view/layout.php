@@ -9,12 +9,13 @@
 </head>
 <body>
     <nav class="navigation">
-        <img class="slanted-logo-big" src="assets/slanted-logo.svg" height="40" alt="slanted big logo">
+        <img class="slanted-logo-big" src="assets/slanted-logo.svg" height="32" alt="slanted big logo">
+        <div class="line"></div>
         <ul class="nav-list">
-            <li class="nav-list-item"><a class="link" href="#origin">origin</a></li>
-            <li class="nav-list-item"><a class="link" href="#use">use</a></li>
-            <li class="nav-list-item"><a class="link" href="#variations">variations</a></li>
-            <li class="nav-list-item"><a class="link" href="#today">today</a></li>
+            <li><a class="link" href="#origin">ORIGIN</a></li>
+            <li><a class="link" href="#use">USE</a></li>
+            <li><a class="link" href="#variations">VARIATIONS</a></li>
+            <li><a class="link" href="#today">TODAY</a></li>
         </ul>
     </nav>
 
@@ -31,7 +32,7 @@
         <img src="assets/slanted-logo-small.png" height="70" alt="slanted small logo">
         <p>made with <img src="assets/heart-icon.svg" height="10" alt="love"> by lhlcmt</p>
     </footer>
-    
+
   <?php echo $js; ?>
 </body>
 </html>
