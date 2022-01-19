@@ -3,6 +3,8 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 100%;
 }
 
 /* stylelint-disable */
@@ -13,27 +15,7 @@ html {
 }
 /* stylelint-enable */
 
-body {
-  font-family: var(--font);
-}
-
-li {
-  line-height: 1.8;
-}
-
-.container {
-  width: 60rem;
-  margin: var(--spacerBig) auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.pagetitle {
-  font-size: var(--fontBig);
-}
-
-.demo-list {
-  margin-top: var(--spacerBig);
-  text-transform: capitalize;
+.navigation {
+  background-color: var(--colour2);
+  padding: .5rem;
 }

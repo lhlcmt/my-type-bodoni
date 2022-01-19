@@ -2,13 +2,21 @@
 
 use \Illuminate\Database\Eloquent\Model;
 
-class Demo extends Model {
-  // refer to a database table, an object us used here for demo purposes
+class MainText extends Model {
+  //
   public $timestamps = false;
 
-  /*public $name;
+  public static function validate($data){
 
-  public function __construct($name){
-    $this->name = $name;
-  }*/
+    $errors = [];
+    if(!isset($data['title'])){
+      $errors['title'] = "Please fill in title";
+    }
+    if(empty($data['text'])){
+      $errors['text'] = "Please fill in a text";
+    }
+    return $errors;
+
+  }
+
 }
