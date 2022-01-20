@@ -1,10 +1,10 @@
 <section class="content">
   <div class="infinite-scroll">
-  <div class="infinite-scroll-1">
-    <div class="infinite-scroll-2">
-      <h1  class="infinite-scroll-text">The use of Bodoni • The use of Bodoni • The use of Bodoni • The use of Bodoni •</h1>
+    <div class="infinite-scroll-1">
+      <div class="infinite-scroll-2">
+        <h1  class="infinite-scroll-text">The use of Bodoni • The use of Bodoni • The use of Bodoni • The use of Bodoni •</h1>
+      </div>
     </div>
-  </div>
   </div>
   <div>
       <ul>
@@ -23,3 +23,10 @@
       <p><?php echo $main_text['text']; ?></p>
   <?php endforeach; ?>
 </section>
+<div class="infinite-scroll">
+    <div class="infinite-scroll-1">
+      <div class="infinite-scroll-2">
+        <h1  class="infinite-scroll-text">The use of Bodoni • The use of Bodoni • The use of Bodoni • The use of Bodoni •</h1>
+      </div>
+    </div>
+  </div>
