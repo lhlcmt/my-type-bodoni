@@ -13,9 +13,208 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-size: 100%;
+  font-family: 'brother-1816', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  background-color: var(--colour2);
+}
+
+/*_____HEADER_____*/
+
+.navigation, footer {
+  background-color: var(--colour2);
 }
 
 .navigation {
-  background-color: var(--colour2);
-  padding: .5rem;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto 1px 1fr;
+  grid-template-areas:
+    'logo'
+    'line'
+    'nav';
+  height: fit-content;
 }
+
+.slanted-logo-big {
+  grid-area: logo;
+  margin: .5rem;
+  height: 32px;
+}
+
+.line {
+  height: 1px;
+  background-color: var(--colour1);
+  width: 100%;
+  grid-area: line;
+}
+
+.nav-list {
+  grid-area: nav;
+  display: flex;
+  margin: .7rem .5rem;
+  justify-content: space-between;
+}
+
+.link {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--colour1);
+  border: .1rem solid var(--colour2);
+  padding: .2rem .5rem;
+}
+
+.link:hover {
+  border: .1rem solid var(--colour1);
+}
+
+.link:active {
+  background-color: var(--colour1);
+  color: var(--colour2);
+}
+
+/*_____VARIATIONS_____*/
+
+.bodoni-variations {
+  background-color: var(--colour1);
+  color: var(--colour5);
+  line-height: 3rem;
+}
+
+.bodoni-variations-item {
+  display: flex;
+  align-items: center;
+}
+
+.variation-img {
+  width: 100%;
+}
+
+.variation-name {
+  margin-left: 1rem;
+  width: 100%;
+}
+
+.variation-line {
+  height: 1px;
+  background-color: var(--colour1);
+  width: 100%;
+}
+
+.bodoni-variations-item:hover > .variation-line {
+  background-color: var(--colour3);
+  box-shadow: 1px 1px 10px 1px var(--colour3);
+}
+
+.bodoni-variations-item:hover > .variation-name {
+  color: var(--colour3);
+}
+
+.bodoni-variations-item:active > .variation-line {
+  background-color: var(--colour3);
+  box-shadow: 1px 1px 10px 1px var(--colour3);
+}
+
+.bodoni-variations-item:active > .variation-name {
+  color: var(--colour3);
+}
+
+/*_____FOOTER_____*/
+
+.navigation-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    'logo nav'
+    'mark nav';
+}
+
+.slanted-logo-small {
+  grid-area: logo;
+  margin: 1rem;
+}
+
+.footer-nav {
+  grid-area: nav;
+  text-align: right;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer-nav-item {
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--colour1);
+  font-size: 18px;
+  border: .1rem solid var(--colour2);
+  padding: .1rem .5rem;
+  line-height: 2.1rem;
+}
+
+.footer-nav-item:hover {
+  border: .1rem solid var(--colour1);
+}
+
+.footer-nav-item:active {
+  background-color: var(--colour1);
+  color: var(--colour2);
+}
+
+.lhlcmt-mark {
+  color: var(--colour1);
+  opacity: 50%;
+  font-size: 11px;
+  grid-area: mark;
+  margin: .3rem;
+  margin-top: auto;
+}
+
+.infinite-scroll {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 6rem;
+  margin: auto;
+  background-color: var(--colour1);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.infinite-scroll-1 {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  transform: scale(2);
+  transition: all 1s ease;
+}
+
+.infinite-scroll-2 {
+  display: flex;
+  animation: scrollText 33s infinite linear;
+}
+
+.infinite-scroll-text {
+  font-family: 'Bodoni URW', serif;
+  font-weight: 700;
+  font-style: oblique;
+  font-size: 25px;
+  color: var(--colour5);
+  transition: all 2s ease;
+}
+
+/* stylelint-disable */
+@keyframes scrollText {
+  from { transform: translateX(0%); }
+  to { transform: translateX(-50%); }
+}
+/* stylelint-enable */

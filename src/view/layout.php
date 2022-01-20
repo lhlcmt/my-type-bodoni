@@ -4,34 +4,36 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.typekit.net/ksz3knm.css">
   <?php echo $css; ?>
     <title>the use of Bodoni</title>
 </head>
 <body>
     <nav class="navigation">
-        <img class="slanted-logo-big" src="assets/slanted-logo.svg" height="40" alt="slanted big logo">
+        <img class="slanted-logo-big" src="assets/slanted-logo.svg" height="32" alt="slanted big logo">
+        <div class="line"></div>
         <ul class="nav-list">
-            <li class="nav-list-item"><a class="link" href="#origin">origin</a></li>
-            <li class="nav-list-item"><a class="link" href="#use">use</a></li>
-            <li class="nav-list-item"><a class="link" href="#variations">variations</a></li>
-            <li class="nav-list-item"><a class="link" href="#today">today</a></li>
+            <li><a class="link" href="#origin">ORIGIN</a></li>
+            <li><a class="link" href="#use">USE</a></li>
+            <li><a class="link" href="#variations">VARIATIONS</a></li>
+            <li><a class="link" href="#today">TODAY</a></li>
         </ul>
     </nav>
 
       <?php echo $content;?>
 
 
-    <footer>
-        <ul>
-            <li><a href="#origin">origin</a></li>
-            <li><a href="#use">use</a></li>
-            <li><a href="#variations">variations</a></li>
-            <li><a href="#today">today</a></li>
+    <footer class="navigation-footer">
+        <img class="slanted-logo-small" src="assets/slanted-logo-small.png" height="93" alt="slanted small logo">
+        <ul class="footer-nav">
+            <li><a class="footer-nav-item" href="#origin">ORIGIN</a></li>
+            <li><a class="footer-nav-item" href="#use">USE</a></li>
+            <li><a class="footer-nav-item" href="#variations">VARIATIONS</a></li>
+            <li><a class="footer-nav-item" href="#today">TODAY</a></li>
         </ul>
-        <img src="assets/slanted-logo-small.png" height="70" alt="slanted small logo">
-        <p>made with <img src="assets/heart-icon.svg" height="10" alt="love"> by lhlcmt</p>
+        <a href="https://léah.be/" target="_blank" class="lhlcmt-mark">made with <img src="assets/heart-icon.svg" height="8" alt="love"> by lhlcmt</a>
     </footer>
-    
+
   <?php echo $js; ?>
 </body>
 </html>
