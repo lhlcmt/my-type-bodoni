@@ -26,15 +26,15 @@
       <p><?php echo $main_text['text']; ?></p>
   <?php endforeach; ?>
 
-  <ul class="bodoni-variations">
+  <div class="bodoni-variations">
     <?php foreach($var_svgs as $var_svg): ?>
-      <li class="bodoni-variations-item">
+      <div class="bodoni-variations-item">
         <?php echo $var_svg['path']; ?>
         <div class="variation-line"></div>
         <?php echo $var_svg['name']; ?>
-      <li>
+    </div>
     <?php endforeach; ?>
-  </ul>
+  </div>
 
 <div class="infinite-scroll">
     <div class="infinite-scroll-1">

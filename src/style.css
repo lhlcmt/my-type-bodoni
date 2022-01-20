@@ -79,21 +79,29 @@ html {
 .bodoni-variations {
   background-color: var(--colour1);
   color: var(--colour5);
-  line-height: 3rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .bodoni-variations-item {
-  display: flex;
+  margin: .5rem 1rem;
+  display: grid;
+  grid-template-columns: max-content auto max-content;
+  grid-template-rows: 1fr;
+  gap: .1rem 1rem;
   align-items: center;
 }
 
 .variation-img {
   width: 100%;
+  height: 30px;
+  align-self: left;
 }
 
 .variation-name {
-  margin-left: 1rem;
+  font-size: 14px;
   width: 100%;
+  text-align: right;
 }
 
 .variation-line {
@@ -172,6 +180,8 @@ html {
   margin: .3rem;
   margin-top: auto;
 }
+
+/*_____INFINITE SCROLL_____*/
 
 .infinite-scroll {
   display: flex;
