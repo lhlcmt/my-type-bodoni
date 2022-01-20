@@ -38,7 +38,6 @@
   </div>
 
   <div class="basic-info">
-    <img class="basic-info-img" src="./assets/portrait-giambattista.gif" alt="giambattista gif" width="100%">
     <div class="basic-info-text">
       <ul class="basic-info-category">
           <li>inventor:</li>
