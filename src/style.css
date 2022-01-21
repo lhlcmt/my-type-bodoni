@@ -23,17 +23,17 @@ html {
   display: grid;
   width: 100%;
   grid-template-rows: auto 30rem auto auto auto auto auto auto auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
-    'top top top top issue'
-    'basic basic basic basic basic'
-    'main1 main1 main1 main1 main1'
-    'main2 main2 main2 main2 main2'
-    'seen seen seen seen seen'
-    'main3 main3 main3 main3 main3'
-    'dig dig dig dig dig'
-    'main4 main4 main4 main4 main4'
-    'var var var var var';
+    'top top top top top issue'
+    'basic basic basic basic basic basic'
+    'main1 main1 main1 main1 main1 main1'
+    'main2 main2 main2 main2 main2 main2'
+    'quote1 quote1 quote1 seen seen seen'
+    'main3 main3 main3 main3 main3 main3'
+    'dig dig dig dig dig dig'
+    'main4 main4 main4 main4 main4 main4'
+    'var var var var var var';
   gap: .1rem;
 }
 
@@ -229,6 +229,21 @@ html {
   grid-area: main4;
 }
 
+/*_____QUOTE 1_____*/
+
+.quote1 {
+  grid-area: quote1;
+  background-color: var(--colour1);
+  padding: 1rem;
+}
+
+.quote-text {
+  color: var(--colour4);
+  font-style: oblique;
+  font-weight: 200;
+  font-size: 18px;
+}
+
 /*_____BODONI SEEN IN_____*/
 
 .bodoni-seen-in {
@@ -241,7 +256,7 @@ html {
 }
 
 .seen-in-img {
-  width: 10rem;
+  width: 40vw;
 }
 
 .seen-in-img-container {

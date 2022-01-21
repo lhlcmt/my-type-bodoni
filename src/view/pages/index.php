@@ -58,6 +58,10 @@
     </div>
   <?php endforeach; ?>
 
+  <div class="quote1">
+    <p class="quote-text">Bodoni has been known for having that -very expensive- feel to it.</p>
+  </div>
+
   <div class="bodoni-seen-in">
     <?php foreach($seen_in_imgs as $seen_in_img):?>
       <div class='seen-in-img-container'>
