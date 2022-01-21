@@ -64,7 +64,7 @@
 
   <div class="bodoni-seen-in">
     <?php foreach($seen_in_imgs as $seen_in_img):?>
-      <div class='seen-in-img-container'>
+      <div class='seen-in-img-container parallax-bg' data-speed="1.7" >
         <?php echo $seen_in_img['path']; ?>
       </div>
     <?php endforeach; ?>
@@ -89,3 +89,5 @@
       </div>
     </div>
   </div>
+
+
