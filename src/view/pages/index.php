@@ -58,6 +58,28 @@
     </div>
   <?php endforeach; ?>
 
+  <div class="bodoni-characteristics">
+    <div class="bodoni-char-top">
+      <div class="bodoni-char-line"></div>
+      <p class="bodoni-char-top-text">The anatomy of bodoni</p>
+    </div>
+    <div class="map-anatomy">
+      <img class="anatomy-img" src="./assets/typographical.png" alt="typographical image" width="200">
+      <div class="circle circle1"></div>
+      <div class="circle circle2"></div>
+      <div class="circle circle3"></div>
+      <div class="circle circle4"></div>
+      <div class="circle circle5"></div>
+    </div>
+    <ul class="bodoni-char-list">
+      <li class="bodoni-char-list-item"><p class="bodoni-list-text">high contrast</p><div style="opacity:0%" class="bodoni-list-line line1"></div></li>
+      <li class="bodoni-char-list-item"><p class="bodoni-list-text">horizontal stress</p><div  style="opacity:0%"class="bodoni-list-line line2"></div></li>
+      <li class="bodoni-char-list-item"><p class="bodoni-list-text">vertical axis</p><div style="opacity:0%" class="bodoni-list-line line3"></div></li>
+      <li class="bodoni-char-list-item"><p class="bodoni-list-text">abrupt hairline serif</p><div style="opacity:0%" class="bodoni-list-line line4"></div></li>
+      <li class="bodoni-char-list-item"><p class="bodoni-list-text">perpendicular nature</p><div style="opacity:0%" class="bodoni-list-line line5"></div></li>
+    </ul>
+  </div>
+
   <div class="quote1">
     <p class="quote-text">Bodoni has been known for having that -very expensive- feel to it.</p>
   </div>
@@ -72,7 +94,7 @@
 
   <div class="bodoni-variations">
     <?php foreach($var_svgs as $var_svg): ?>
-      <div class="bodoni-variations-item parallax-bg" data-speed="1.7">
+      <div class="bodoni-variations-item parallax-bg" data-speed=".8">
         <?php echo $var_svg['path']; ?>
         <div class="variation-line"></div>
         <?php echo $var_svg['name']; ?>

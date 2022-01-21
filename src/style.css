@@ -22,18 +22,19 @@ html {
 .content {
   display: grid;
   width: 100%;
-  grid-template-rows: auto 30rem auto auto 35rem auto auto auto 20rem;
+  grid-template-rows: auto 30rem auto auto auto 35rem auto 15rem auto auto;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
     'top top top top top issue'
     'basic basic basic basic basic basic'
     'main1 main1 main1 main1 main1 main1'
+    'char char char char char char'
     'main2 main2 main2 main2 main2 main2'
     'quote1 quote1 quote1 seen seen seen'
     'main3 main3 main3 main3 main3 main3'
+    'var var var var var var'
     'dig dig dig dig dig dig'
-    'main4 main4 main4 main4 main4 main4'
-    'var var var var var var';
+    'main4 main4 main4 main4 main4 main4';
   gap: .1rem;
 }
 
@@ -229,6 +230,108 @@ html {
   grid-area: main4;
 }
 
+/*_____BODONI CHARACTERISTICS_____*/
+
+.bodoni-characteristics {
+  grid-area: char;
+  background-color: var(--colour1);
+  padding: 2rem;
+}
+
+.bodoni-char-top {
+  margin-left: auto;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  grid-gap: .5rem;
+  color: var(--colour5);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.map-anatomy {
+  margin-top: .5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.anatomy-img {
+  width: 100%;
+}
+
+.circle {
+  cursor: pointer;
+  position: absolute;
+  width: 7vw;
+  height: 7vw;
+  border: .1rem solid var(--colour4);
+  border-radius: 50%;
+  background-color: none;
+}
+
+.circle:hover, .circle:active {
+  background-color: rgba(216, 141, 249, .4);
+}
+
+.circle1 {
+  top: 25%;
+  left: 8.5%;
+}
+
+.circle2 {
+  top: 30%;
+  left: 59%;
+}
+
+.circle3 {
+  top: 20%;
+  left: 25%;
+}
+
+.circle4 {
+  top: 0%;
+  left: 93%;
+}
+
+.circle5 {
+  top: 45%;
+  left: 73%;
+}
+
+.bodoni-char-line {
+  content: '';
+  height: 1px;
+  width: 4rem;
+  background-color: var(--colour5);
+}
+
+.bodoni-char-list {
+  margin-top: 1rem;
+  line-height: 2rem;
+}
+
+.bodoni-char-list-item {
+  color: var(--colour3);
+  font-weight: 100;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.bodoni-list-text {
+  white-space: nowrap;
+}
+
+.bodoni-list-line {
+  content: '';
+  height: 1px;
+  margin-left: .5rem;
+  width: 100%;
+  background-color: var(--colour3);
+  box-shadow: 1px 1px 10px 1px var(--colour3);
+}
+
 /*_____QUOTE 1_____*/
 
 .quote1 {
@@ -267,7 +370,7 @@ html {
 }
 
 .seen-in-img-container:nth-of-type(1) {
-  margin-top: 120rem;
+  margin-top: 160rem;
 }
 
 .seen-in-img-container::before {
@@ -325,7 +428,7 @@ h2 {
 }
 
 .bodoni-variations-item:nth-of-type(1) {
-  margin-top: 250rem;
+  margin-top: 110rem;
 }
 
 .variation-img {
