@@ -22,13 +22,14 @@ html {
 .content {
   display: grid;
   width: 100%;
-  grid-template-rows: auto 30rem auto  auto auto auto auto auto;
+  grid-template-rows: auto 30rem auto auto auto auto auto auto auto;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
     'top top top top issue'
     'basic basic basic basic basic'
     'main1 main1 main1 main1 main1'
     'main2 main2 main2 main2 main2'
+    'seen seen seen seen seen'
     'main3 main3 main3 main3 main3'
     'dig dig dig dig dig'
     'main4 main4 main4 main4 main4'
@@ -226,6 +227,37 @@ html {
 
 .main-content4 {
   grid-area: main4;
+}
+
+/*_____BODONI SEEN IN_____*/
+
+.bodoni-seen-in {
+  grid-area: seen;
+  background-color: var(--colour1);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.seen-in-img {
+  width: 10rem;
+}
+
+.seen-in-img-container {
+  display: inline-block;
+  position: relative;
+  margin-left: 1rem;
+}
+
+.seen-in-img-container::before {
+  position: absolute;
+  top: -.5rem;
+  left: -.5rem;
+  width: 100%;
+  height: 100%;
+  border: .12rem solid var(--colour3);
+  content: '';
 }
 
 /*_____DIGITAL ERA_____*/

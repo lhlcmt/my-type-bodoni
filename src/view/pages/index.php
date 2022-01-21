@@ -58,6 +58,14 @@
     </div>
   <?php endforeach; ?>
 
+  <div class="bodoni-seen-in">
+    <?php foreach($seen_in_imgs as $seen_in_img):?>
+      <div class='seen-in-img-container'>
+        <?php echo $seen_in_img['path']; ?>
+      </div>
+    <?php endforeach; ?>
+  </div>
+
   <div class="bodoni-variations">
     <?php foreach($var_svgs as $var_svg): ?>
       <div class="bodoni-variations-item">
