@@ -54,7 +54,7 @@
 
   <?php foreach($main_texts as $main_text): ?>
       <?php echo $main_text['title']; ?>
-      <p class="main-text-expl"><?php echo $main_text['text']; ?></p>
+      <div class="main-content-div"><?php echo $main_text['text']; ?></div>
     </div>
   <?php endforeach; ?>
 
@@ -100,6 +100,15 @@
         <?php echo $var_svg['name']; ?>
       </div>
     <?php endforeach; ?>
+  </div>
+
+  <div class="gif1"><img class="gif-contents" src="./assets/bodoni-chrome.gif" alt="bodoni experiment gif" width="100"></div>
+  <div class="gif2"><img class="gif-contents" src="./assets/bodoni-glitch.gif" alt="bodoni experiment gif" width="100"></div>
+  <div class="gif3"><img class="gif-contents" src="./assets/bodoni-stretch.gif" alt="bodoni experiment gif" width="100"></div>
+  <div class="gif4"><img class="gif-contents" src="./assets/bodoni-tvwave.gif" alt="bodoni experiment gif" width="100"></div>
+
+  <div class="quote2">
+    <p class="quote-text">Numerous typographers and designers redesigning Bodoni proves how timeless the font really is.</p>
   </div>
 
 </section>
