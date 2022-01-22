@@ -80,7 +80,7 @@
     </ul>
   </div>
 
-  <div class="quote1">
+    <div class="quote1">
     <p class="quote-text">Bodoni has been known for having that -very expensive- feel to it.</p>
   </div>
 
@@ -108,7 +108,7 @@
   <div class="gif4"></div>
 
   <div class="quote2">
-    <p class="quote-text">Numerous typographers and designers redesigning Bodoni proves how timeless the font really is.</p>
+    <p class="quote-text typewriter">Numerous typographers and designers redesigning Bodoni proves how timeless the font really is.</p>
   </div>
 
 </section>
