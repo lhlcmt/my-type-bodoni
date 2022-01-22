@@ -9,6 +9,7 @@
     <title>the use of Bodoni</title>
 </head>
 <body>
+
     <nav class="navigation">
         <img class="slanted-logo-big" src="assets/slanted-logo.svg" height="32" alt="slanted big logo">
         <div class="line"></div>
@@ -22,7 +23,6 @@
 
       <?php echo $content;?>
 
-
     <footer class="navigation-footer">
         <img class="slanted-logo-small" src="assets/slanted-logo-small.png" height="93" alt="slanted small logo">
         <ul class="footer-nav">
@@ -34,6 +34,8 @@
         <a href="https://léah.be/" target="_blank" class="lhlcmt-mark">made with <img src="assets/heart-icon.svg" height="8" alt="love"> by lhlcmt</a>
     </footer>
 
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <?php echo $js; ?>
+
 </body>
 </html>

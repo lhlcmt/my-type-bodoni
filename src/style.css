@@ -34,7 +34,7 @@ html {
     'main3 main3 main3 main3 main3 main3'
     'var var var var var var'
     'gif1 gif1 gif2 gif2 gif3 gif3'
-    'quote2 quote2 quote2 quote2 gif4 gif4'
+    'gif4 gif4 quote2 quote2 quote2 quote2'
     'dig dig dig dig dig dig'
     'main4 main4 main4 main4 main4 main4';
   gap: .1rem;
@@ -364,7 +364,7 @@ h2 {
 .quote2 {
   grid-area: quote2;
   background-color: var(--colour1);
-  padding: 1rem;
+  padding: 1rem 2rem 5rem;
   text-align: right;
 }
 
@@ -494,8 +494,8 @@ h2 {
 /*_____BODONI GIFS_____*/
 
 .gif1, .gif2, .gif3, .gif4 {
-  width: 100%;
   background-color: var(--colour1);
+  width: 100%;
 }
 
 .gif1 {
