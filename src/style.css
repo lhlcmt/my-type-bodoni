@@ -21,8 +21,8 @@ html {
 
 .content {
   display: grid;
-  width: 100%;
-  grid-template-rows: auto 30rem auto auto auto 35rem auto 15rem auto auto;
+  max-width: 100%;
+  grid-template-rows: auto 30rem auto auto auto 35rem auto 15rem auto auto auto auto;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
     'top top top top top issue'
@@ -33,6 +33,8 @@ html {
     'quote1 quote1 quote1 seen seen seen'
     'main3 main3 main3 main3 main3 main3'
     'var var var var var var'
+    'gif1 gif1 gif2 gif2 gif3 gif3'
+    'quote2 quote2 quote2 quote2 gif4 gif4'
     'dig dig dig dig dig dig'
     'main4 main4 main4 main4 main4 main4';
   gap: .1rem;
@@ -214,6 +216,25 @@ html {
   padding: 1rem;
 }
 
+h2 {
+  color: var(--colour4);
+  font-weight: 500;
+  font-style: oblique;
+  font-size: 30px;
+  text-align: right;
+  padding-top: 1rem;
+}
+
+.main-content-div {
+  margin: 2rem 1rem;
+}
+
+.main-text-expl {
+  margin: 1rem;
+  font-size: 14px;
+  line-height: 1rem;
+}
+
 .main-content1 {
   grid-area: main1;
 }
@@ -332,12 +353,19 @@ html {
   box-shadow: 1px 1px 10px 1px var(--colour3);
 }
 
-/*_____QUOTE 1_____*/
+/*_____QUOTES_____*/
 
 .quote1 {
   grid-area: quote1;
   background-color: var(--colour1);
   padding: 1rem;
+}
+
+.quote2 {
+  grid-area: quote2;
+  background-color: var(--colour1);
+  padding: 1rem;
+  text-align: right;
 }
 
 .quote-text {
@@ -360,7 +388,7 @@ html {
 }
 
 .seen-in-img {
-  width: 40vw;
+  width: 37vw;
 }
 
 .seen-in-img-container {
@@ -392,19 +420,16 @@ html {
   grid-area: dig;
 }
 
-h2 {
-  color: var(--colour4);
-  font-weight: 500;
-  font-style: oblique;
-  font-size: 30px;
-  margin-bottom: 1rem;
-  text-align: right;
-}
-
-.main-text-expl {
+.digital-era-expl {
   margin: 1rem;
   font-size: 14px;
   line-height: 1rem;
+}
+
+.digital-era-basic-info {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 1rem;
 }
 
 /*_____VARIATIONS_____*/
@@ -464,6 +489,33 @@ h2 {
 
 .bodoni-variations-item:active > .variation-name {
   color: var(--colour3);
+}
+
+/*_____BODONI GIFS_____*/
+
+.gif1, .gif2, .gif3, .gif4 {
+  width: 100%;
+  background-color: var(--colour1);
+}
+
+.gif1 {
+  grid-area: gif1;
+}
+
+.gif2 {
+  grid-area: gif2;
+}
+
+.gif3 {
+  grid-area: gif3;
+}
+
+.gif4 {
+  grid-area: gif4;
+}
+
+.gif-contents {
+  width: 100%;
 }
 
 /*_____FOOTER_____*/
