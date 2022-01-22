@@ -102,10 +102,10 @@
     <?php endforeach; ?>
   </div>
 
-  <div class="gif1"><img class="gif-contents" src="./assets/bodoni-chrome.gif" alt="bodoni experiment gif" width="100"></div>
-  <div class="gif2"><img class="gif-contents" src="./assets/bodoni-glitch.gif" alt="bodoni experiment gif" width="100"></div>
-  <div class="gif3"><img class="gif-contents" src="./assets/bodoni-stretch.gif" alt="bodoni experiment gif" width="100"></div>
-  <div class="gif4"><img class="gif-contents" src="./assets/bodoni-tvwave.gif" alt="bodoni experiment gif" width="100"></div>
+  <div class="gif1"><lottie-player src="./assets/bodoni-stretch-lottie.json" speed="1"  style="width: 100%; height: 100%;" hover loop  autoplay></lottie-player></div>
+  <div class="gif2"><lottie-player src="./assets/bodoni-versions-lottie.json"  speed="1"  style="width: 100%; height: 100%;" hover loop  autoplay></lottie-player></div>
+  <div class="gif3"><lottie-player src="./assets/bodoni-wriggle-lottie.json" speed="1"  style="width: 100%; height: 100%;" hover loop  autoplay></lottie-player></div>
+  <div class="gif4"></div>
 
   <div class="quote2">
     <p class="quote-text">Numerous typographers and designers redesigning Bodoni proves how timeless the font really is.</p>
