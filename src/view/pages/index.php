@@ -54,7 +54,7 @@
 
   <?php foreach($main_texts as $main_text): ?>
       <?php echo $main_text['title']; ?>
-      <p class="main-text-expl"><?php echo $main_text['text']; ?></p>
+      <?php echo $main_text['text']; ?>
     </div>
   <?php endforeach; ?>
 

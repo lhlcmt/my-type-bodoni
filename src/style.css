@@ -214,6 +214,12 @@ html {
   padding: 1rem;
 }
 
+.main-text-expl {
+  margin: 1rem;
+  font-size: 14px;
+  line-height: 1rem;
+}
+
 .main-content1 {
   grid-area: main1;
 }
@@ -401,10 +407,16 @@ h2 {
   text-align: right;
 }
 
-.main-text-expl {
+.digital-era-expl {
   margin: 1rem;
   font-size: 14px;
   line-height: 1rem;
+}
+
+.digital-era-basic-info {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 1rem;
 }
 
 /*_____VARIATIONS_____*/
