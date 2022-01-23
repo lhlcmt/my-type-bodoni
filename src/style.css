@@ -233,7 +233,7 @@ h2 {
 .main-text-expl {
   margin: 1rem;
   font-size: 14px;
-  line-height: 1rem;
+  line-height: 1.1rem;
 }
 
 .main-content1 {
@@ -390,6 +390,7 @@ h2 {
   font-style: oblique;
   font-weight: 200;
   font-size: 18px;
+  line-height: 1.4rem;
 }
 
 /*_____BODONI SEEN IN_____*/
@@ -440,7 +441,7 @@ h2 {
 .digital-era-expl {
   margin: 1rem;
   font-size: 14px;
-  line-height: 1rem;
+  line-height: 1.2rem;
 }
 
 .digital-era-basic-info {
@@ -551,6 +552,7 @@ h2 {
   font-weight: 200;
   text-shadow: 5px 5px 10px var(--colour3);
   font-size: 17px;
+  line-height: 1.3rem;
 }
 
 /*_____FOOTER_____*/
