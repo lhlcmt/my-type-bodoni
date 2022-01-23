@@ -10,6 +10,8 @@ export const init = () => {
     scrub: true
   }, y: (i, target) => - ScrollTrigger.maxScroll(window) * target.dataset.speed, ease: 'none'});
 
+  document.querySelectorAll('.circle-text').style.display = 'none';
+
   const c1 = document.querySelector('.circle1');
   const l1 = document.querySelector('.line1');
   const c2 = document.querySelector('.circle2');

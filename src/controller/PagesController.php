@@ -18,7 +18,6 @@ class PagesController extends Controller {
     $seen_in_imgs = SeenInImg::where('path', '!=', 'NULL')->get();
     $this->set('seen_in_imgs',$seen_in_imgs);
 
-    $displayOpacity1 = '0%';
-    $this->set('displayOpacity1', $displayOpacity1);
+
   }
 }

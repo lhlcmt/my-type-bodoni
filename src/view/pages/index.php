@@ -66,21 +66,19 @@
     <div class="map-anatomy">
       <img class="anatomy-img" src="./assets/typographical.png" alt="typographical image" width="200">
 
-        <form method="post" action="index.php?">
-          <input  type="radio" class="circle circle1" value="">
-          <input  type="radio" class="circle circle2" value="">
-          <input  type="radio" class="circle circle3" value="">
-          <input  type="radio" class="circle circle4" value="">
-          <input  type="radio" class="circle circle5" value="">
-        </form>
+        <div class="circle circle1"><p style="display:block" class="circle-text">1</p></div>
+        <div class="circle circle2"><p style="display:block" class="circle-text">2</p></div>
+        <div class="circle circle3"><p style="display:block"class="circle-text">3</p></div>
+        <div class="circle circle4"><p style="display:block" class="circle-text">4</p></div>
+        <div class="circle circle5"><p style="display:block" class="circle-text">5</p></div>
 
     </div>
     <ul class="bodoni-char-list">
-      <li class="bodoni-char-list-item"><p class="bodoni-list-text">high contrast</p><div style="opacity:<?php echo $displayOpacity1 ?>" class="bodoni-list-line line1"></div></li>
-      <li class="bodoni-char-list-item"><p class="bodoni-list-text">horizontal stress</p><div  style="opacity:<?php echo $displayOpacity ?>"class="bodoni-list-line line2"></div></li>
-      <li class="bodoni-char-list-item"><p class="bodoni-list-text">vertical axis</p><div style="opacity:<?php echo $displayOpacity ?>" class="bodoni-list-line line3"></div></li>
-      <li class="bodoni-char-list-item"><p class="bodoni-list-text">abrupt hairline serif</p><div style="opacity:<?php echo $displayOpacity ?>" class="bodoni-list-line line4"></div></li>
-      <li class="bodoni-char-list-item"><p class="bodoni-list-text">perpendicular nature</p><div style="opacity:<?php echo $displayOpacity ?>" class="bodoni-list-line line5"></div></li>
+      <li class="bodoni-char-list-item"><p class="line-text">1</p><p class="bodoni-list-text">high contrast</p><div style="opacity:0%" class="bodoni-list-line line1"></div></li>
+      <li class="bodoni-char-list-item"><p class="line-text">2</p><p class="bodoni-list-text">horizontal stress</p><div  style="opacity:0%"class="bodoni-list-line line2"></div></li>
+      <li class="bodoni-char-list-item"><p class="line-text">3</p><p class="bodoni-list-text">vertical axis</p><div style="opacity:0%" class="bodoni-list-line line3"></div></li>
+      <li class="bodoni-char-list-item"><p class="line-text">4</p><p class="bodoni-list-text">abrupt hairline serif</p><div style="opacity:0%" class="bodoni-list-line line4"></div></li>
+      <li class="bodoni-char-list-item"><p class="line-text">5</p><p class="bodoni-list-text">perpendicular nature</p><div style="opacity:0%" class="bodoni-list-line line5"></div></li>
     </ul>
   </div>
 

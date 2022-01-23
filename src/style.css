@@ -293,6 +293,15 @@ h2 {
   background-color: transparent;
 }
 
+.circle-text {
+  font-size: 16px;
+  opacity: 70%;
+  color: var(--colour4);
+  position: relative;
+  top: -.6rem;
+  left: -.6rem;
+}
+
 .circle:hover, .circle:active {
   background-color: rgba(216, 141, 249, .4);
 }
@@ -353,6 +362,12 @@ h2 {
   width: 100%;
   background-color: var(--colour3);
   box-shadow: 1px 1px 10px 1px var(--colour3);
+}
+
+.line-text {
+  color: var(--colour3);
+  font-size: 14px;
+  margin-right: 1rem;
 }
 
 /*_____QUOTES_____*/
