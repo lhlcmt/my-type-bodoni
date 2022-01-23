@@ -65,22 +65,26 @@
     </div>
     <div class="map-anatomy">
       <img class="anatomy-img" src="./assets/typographical.png" alt="typographical image" width="200">
-      <div class="circle circle1"></div>
-      <div class="circle circle2"></div>
-      <div class="circle circle3"></div>
-      <div class="circle circle4"></div>
-      <div class="circle circle5"></div>
+
+        <form method="post" action="index.php?">
+          <input  type="radio" class="circle circle1" value="">
+          <input  type="radio" class="circle circle2" value="">
+          <input  type="radio" class="circle circle3" value="">
+          <input  type="radio" class="circle circle4" value="">
+          <input  type="radio" class="circle circle5" value="">
+        </form>
+
     </div>
     <ul class="bodoni-char-list">
-      <li class="bodoni-char-list-item"><p class="bodoni-list-text">high contrast</p><div style="opacity:0%" class="bodoni-list-line line1"></div></li>
-      <li class="bodoni-char-list-item"><p class="bodoni-list-text">horizontal stress</p><div  style="opacity:0%"class="bodoni-list-line line2"></div></li>
-      <li class="bodoni-char-list-item"><p class="bodoni-list-text">vertical axis</p><div style="opacity:0%" class="bodoni-list-line line3"></div></li>
-      <li class="bodoni-char-list-item"><p class="bodoni-list-text">abrupt hairline serif</p><div style="opacity:0%" class="bodoni-list-line line4"></div></li>
-      <li class="bodoni-char-list-item"><p class="bodoni-list-text">perpendicular nature</p><div style="opacity:0%" class="bodoni-list-line line5"></div></li>
+      <li class="bodoni-char-list-item"><p class="bodoni-list-text">high contrast</p><div style="opacity:<?php echo $displayOpacity1 ?>" class="bodoni-list-line line1"></div></li>
+      <li class="bodoni-char-list-item"><p class="bodoni-list-text">horizontal stress</p><div  style="opacity:<?php echo $displayOpacity ?>"class="bodoni-list-line line2"></div></li>
+      <li class="bodoni-char-list-item"><p class="bodoni-list-text">vertical axis</p><div style="opacity:<?php echo $displayOpacity ?>" class="bodoni-list-line line3"></div></li>
+      <li class="bodoni-char-list-item"><p class="bodoni-list-text">abrupt hairline serif</p><div style="opacity:<?php echo $displayOpacity ?>" class="bodoni-list-line line4"></div></li>
+      <li class="bodoni-char-list-item"><p class="bodoni-list-text">perpendicular nature</p><div style="opacity:<?php echo $displayOpacity ?>" class="bodoni-list-line line5"></div></li>
     </ul>
   </div>
 
-    <div class="quote1">
+  <div class="quote1">
     <p class="quote-text">Bodoni has been known for having that -very expensive- feel to it.</p>
   </div>
 
@@ -109,6 +113,10 @@
 
   <div class="quote2">
     <p class="quote-text typewriter">Numerous typographers and designers redesigning Bodoni proves how timeless the font really is.</p>
+  </div>
+
+  <div class="bodoni-future">
+    <p class="typewriter-text">Bodoni  is without a doubt synonymous with creation and artistic ability and will always be relevant in the world of fonts.</p>
   </div>
 
 </section>

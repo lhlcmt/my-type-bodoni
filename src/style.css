@@ -22,7 +22,7 @@ html {
 .content {
   display: grid;
   max-width: 100%;
-  grid-template-rows: auto 30rem auto auto auto 35rem auto 15rem auto auto auto auto;
+  grid-template-rows: auto 30rem auto auto auto 35rem auto 15rem auto auto auto auto 12rem;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
     'top top top top top issue'
@@ -36,7 +36,8 @@ html {
     'gif1 gif1 gif2 gif2 gif3 gif3'
     'gif4 gif4 quote2 quote2 quote2 quote2'
     'dig dig dig dig dig dig'
-    'main4 main4 main4 main4 main4 main4';
+    'main4 main4 main4 main4 main4 main4'
+    'fut fut fut fut fut fut';
   gap: .1rem;
 }
 
@@ -282,13 +283,14 @@ h2 {
 }
 
 .circle {
+  content: '';
   cursor: pointer;
   position: absolute;
   width: 7vw;
   height: 7vw;
   border: .1rem solid var(--colour4);
   border-radius: 50%;
-  background-color: none;
+  background-color: transparent;
 }
 
 .circle:hover, .circle:active {
@@ -516,6 +518,24 @@ h2 {
 
 .gif-contents {
   width: 100%;
+}
+
+/*_____BODONI FUTURE IMAGE_____*/
+
+.bodoni-future {
+  grid-area: fut;
+  background-image: url(assets/bodoni-future.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.typewriter-text {
+  color: var(--colour3);
+  padding: 2rem 1rem;
+  font-weight: 200;
+  text-shadow: 5px 5px 10px var(--colour3);
+  font-size: 17px;
 }
 
 /*_____FOOTER_____*/
