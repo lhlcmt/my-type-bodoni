@@ -117,14 +117,16 @@
     <h2 class="rules-title">Rules of the 'Manuale Tipografico'</h2>
     <div class="bodoni-rules">
       <ul class="bodoni-rules-titles">
-        <?php foreach($bodoni_rules as $bodoni_rule): ?>
-        <li class="bodoni-rules-title"><?php echo $bodoni_rule['title']; ?></li>
-        <?php endforeach; ?>
+        <li class="bodoni-rules-title">regularity:</li>
+        <li class="bodoni-rules-title">clarity:</li>
+        <li class="bodoni-rules-title">good taste:</li>
+        <li class="bodoni-rules-title">beauty:</li>
       </ul>
       <ul class="bodoni-rules-texts">
-        <?php foreach($bodoni_rules as $bodoni_rule): ?>
-        <li class="bodoni-rules-text"><?php echo $bodoni_rule['text']; ?></li>
-        <?php endforeach; ?>
+        <li class="bodoni-rules-text">all letters must be constructed on a common base which defines them</li>
+        <li class="bodoni-rules-text">letters must be highly legible</li>
+        <li class="bodoni-rules-text">letters must fulfil their task without excessive affectations</li>
+        <li class="bodoni-rules-text">letters must be created with care and attention necessary without a time limit</li>
       </ul>
     </div>
   </div>
