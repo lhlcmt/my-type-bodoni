@@ -22,7 +22,7 @@ html {
 .content {
   display: grid;
   max-width: 100%;
-  grid-template-rows: auto 30rem auto auto auto 35rem auto 15rem auto auto auto auto;
+  grid-template-rows: auto 30rem auto auto auto 35rem auto auto auto 15rem auto auto auto auto 12rem;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
     'top top top top top issue'
@@ -31,12 +31,15 @@ html {
     'char char char char char char'
     'main2 main2 main2 main2 main2 main2'
     'quote1 quote1 quote1 seen seen seen'
+    'man man man man man man'
+    'rul rul rul rul rul rul'
     'main3 main3 main3 main3 main3 main3'
     'var var var var var var'
     'gif1 gif1 gif2 gif2 gif3 gif3'
     'gif4 gif4 quote2 quote2 quote2 quote2'
     'dig dig dig dig dig dig'
-    'main4 main4 main4 main4 main4 main4';
+    'main4 main4 main4 main4 main4 main4'
+    'fut fut fut fut fut fut';
   gap: .1rem;
 }
 
@@ -232,7 +235,7 @@ h2 {
 .main-text-expl {
   margin: 1rem;
   font-size: 14px;
-  line-height: 1rem;
+  line-height: 1.1rem;
 }
 
 .main-content1 {
@@ -282,13 +285,23 @@ h2 {
 }
 
 .circle {
+  content: '';
   cursor: pointer;
   position: absolute;
   width: 7vw;
   height: 7vw;
   border: .1rem solid var(--colour4);
   border-radius: 50%;
-  background-color: none;
+  background-color: transparent;
+}
+
+.circle-text {
+  font-size: 16px;
+  opacity: 70%;
+  color: var(--colour4);
+  position: relative;
+  top: -.6rem;
+  left: -.6rem;
 }
 
 .circle:hover, .circle:active {
@@ -353,6 +366,12 @@ h2 {
   box-shadow: 1px 1px 10px 1px var(--colour3);
 }
 
+.line-text {
+  color: var(--colour3);
+  font-size: 14px;
+  margin-right: 1rem;
+}
+
 /*_____QUOTES_____*/
 
 .quote1 {
@@ -369,10 +388,11 @@ h2 {
 }
 
 .quote-text {
-  color: var(--colour4);
+  color: var(--colour3);
   font-style: oblique;
   font-weight: 200;
   font-size: 18px;
+  line-height: 1.4rem;
 }
 
 /*_____BODONI SEEN IN_____*/
@@ -411,6 +431,91 @@ h2 {
   content: '';
 }
 
+/*_____3D EFFECT MANUALE TIPOGRAFICO_____*/
+
+.effect-3d {
+  grid-area: man;
+  width: 100%;
+}
+
+.background-image {
+  width: 100%;
+  height: auto;
+}
+
+.foreground-image {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+.effect-title {
+  color: var(--colour3);
+  position: absolute;
+  text-align: right;
+  width: 100%;
+  font-size: 30px;
+  padding: 1rem;
+  line-height: 2rem;
+  z-index: 2;
+}
+
+.effect-info {
+  color: var(--colour3);
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  z-index: 2;
+  margin-top: 70%;
+  margin-left: 1rem;
+}
+
+/*_____BODONI RULES_____*/
+
+.rules-bodoni {
+  grid-area: rul;
+  background-color: var(--colour1);
+  padding: 1rem;
+}
+
+.rules-title {
+  font-weight: 400;
+  text-align: right;
+  margin-top: 1rem;
+}
+
+.bodoni-rules {
+  color: var(--colour3);
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: .7rem;
+  padding: 2rem 1rem;
+}
+
+.bodoni-rules-titles {
+  white-space: nowrap;
+  font-weight: 400;
+  font-style: oblique;
+  display: grid;
+  grid-template-rows: 1fr .5fr .75fr 1fr;
+  gap: .7rem;
+}
+
+.bodoni-rules-texts {
+  display: grid;
+  grid-template-rows: 1fr .5fr .75fr 1fr;
+  gap: .7rem;
+  font-weight: 200;
+  line-height: 1.3rem;
+}
+
+.arrow {
+  color: var(--colour2);
+  width: 2rem;
+  margin: auto;
+  margin-top: -1.1rem;
+}
+
 /*_____DIGITAL ERA_____*/
 
 .digital-era {
@@ -423,7 +528,7 @@ h2 {
 .digital-era-expl {
   margin: 1rem;
   font-size: 14px;
-  line-height: 1rem;
+  line-height: 1.2rem;
 }
 
 .digital-era-basic-info {
@@ -453,7 +558,7 @@ h2 {
 }
 
 .bodoni-variations-item:nth-of-type(1) {
-  margin-top: 110rem;
+  margin-top: 170rem;
 }
 
 .variation-img {
@@ -516,6 +621,25 @@ h2 {
 
 .gif-contents {
   width: 100%;
+}
+
+/*_____BODONI FUTURE IMAGE_____*/
+
+.bodoni-future {
+  grid-area: fut;
+  background-image: url(assets/bodoni-future.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.typewriter-text {
+  color: var(--colour3);
+  padding: 2rem 1rem;
+  font-weight: 200;
+  text-shadow: 5px 5px 10px var(--colour3);
+  font-size: 17px;
+  line-height: 1.3rem;
 }
 
 /*_____FOOTER_____*/
