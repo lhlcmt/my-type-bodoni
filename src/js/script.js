@@ -1,7 +1,5 @@
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
-import {UniversalTilt} from 'universal-tilt.js';
-
 gsap.registerPlugin(ScrollTrigger);
 
 export const init = () => {

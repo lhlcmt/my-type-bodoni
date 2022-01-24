@@ -95,8 +95,38 @@
   </div>
 
   <div class="effect-3d">
-    <img data-tilt class="foreground-image tilt" src="./assets/3d-foreground.png" alt="3d foreground image" height="100">
+    <p class="effect-title">Manuale<br> Tipografico</p>
+    <div class="effect-info">
+      <ul class="basic-info-category">
+          <li>writer:</li>
+          <li>published:</li>
+          <li>pages:</li>
+      </ul>
+      <ul class="basic-info-expl">
+          <li>Giambattista Bodoni</li>
+          <li>1818</li>
+          <li>600</li>
+      </ul>
+    </div>
+    <img data-tilt data-base="window" class="foreground-image tilt" src="./assets/3d-foreground.png" alt="3d foreground image" height="100">
     <img class="background-image" src="./assets/3d-background.png" alt="3d background image" height="100">
+  </div>
+
+  <div class="rules-bodoni">
+    <p class="arrow">&#9660;</p>
+    <h2 class="rules-title">Rules of the 'Manuale Tipografico'</h2>
+    <div class="bodoni-rules">
+      <ul class="bodoni-rules-titles">
+        <?php foreach($bodoni_rules as $bodoni_rule): ?>
+        <li class="bodoni-rules-title"><?php echo $bodoni_rule['title']; ?></li>
+        <?php endforeach; ?>
+      </ul>
+      <ul class="bodoni-rules-texts">
+        <?php foreach($bodoni_rules as $bodoni_rule): ?>
+        <li class="bodoni-rules-text"><?php echo $bodoni_rule['text']; ?></li>
+        <?php endforeach; ?>
+      </ul>
+    </div>
   </div>
 
   <div class="bodoni-variations">
