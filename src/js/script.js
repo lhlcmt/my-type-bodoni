@@ -1,5 +1,6 @@
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
+import {UniversalTilt} from 'universal-tilt.js';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -9,8 +10,6 @@ export const init = () => {
   gsap.to('.parallax-bg', {scrollTrigger: {
     scrub: true
   }, y: (i, target) => - ScrollTrigger.maxScroll(window) * target.dataset.speed, ease: 'none'});
-
-  document.querySelectorAll('.circle-text').style.display = 'none';
 
   const c1 = document.querySelector('.circle1');
   const l1 = document.querySelector('.line1');
@@ -67,6 +66,5 @@ export const init = () => {
     l3.style.opacity = '0%';
     l4.style.opacity = '0%';
   }
-
 
 };

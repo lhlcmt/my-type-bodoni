@@ -22,7 +22,7 @@ html {
 .content {
   display: grid;
   max-width: 100%;
-  grid-template-rows: auto 30rem auto auto auto 35rem auto 15rem auto auto auto auto 12rem;
+  grid-template-rows: auto 30rem auto auto auto 35rem auto auto 15rem auto auto auto auto 12rem;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
     'top top top top top issue'
@@ -31,6 +31,7 @@ html {
     'char char char char char char'
     'main2 main2 main2 main2 main2 main2'
     'quote1 quote1 quote1 seen seen seen'
+    'man man man man man man'
     'main3 main3 main3 main3 main3 main3'
     'var var var var var var'
     'gif1 gif1 gif2 gif2 gif3 gif3'
@@ -427,6 +428,24 @@ h2 {
   height: 100%;
   border: .12rem solid var(--colour3);
   content: '';
+}
+
+/*_____3D EFFECT MANUALE TIPOGRAFICO_____*/
+
+.effect-3d {
+  grid-area: man;
+  width: 100%;
+}
+
+.background-image {
+  width: 100%;
+  height: auto;
+}
+
+.foreground-image {
+  width: 100%;
+  height: auto;
+  position: absolute;
 }
 
 /*_____DIGITAL ERA_____*/

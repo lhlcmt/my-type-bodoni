@@ -66,7 +66,7 @@
     <div class="map-anatomy">
       <img class="anatomy-img" src="./assets/typographical.png" alt="typographical image" width="200">
 
-        <div class="circle circle1"><p style="display:block" class="circle-text">1</p></div>
+        <div class="circle circle1"><p style="opacity:block" class="circle-text">1</p></div>
         <div class="circle circle2"><p style="display:block" class="circle-text">2</p></div>
         <div class="circle circle3"><p style="display:block"class="circle-text">3</p></div>
         <div class="circle circle4"><p style="display:block" class="circle-text">4</p></div>
@@ -92,6 +92,11 @@
         <?php echo $seen_in_img['path']; ?>
       </div>
     <?php endforeach; ?>
+  </div>
+
+  <div class="effect-3d">
+    <img data-tilt class="foreground-image tilt" src="./assets/3d-foreground.png" alt="3d foreground image" height="100">
+    <img class="background-image" src="./assets/3d-background.png" alt="3d background image" height="100">
   </div>
 
   <div class="bodoni-variations">
