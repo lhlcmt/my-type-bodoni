@@ -1,17 +1,11 @@
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
-//const UniversalTilt = require('universal-tilt.js');
+import {UniversalTilt} from 'universal-tilt.js';
 
 export const init = () => {
   console.log('start executing this JavaScript');
-  /*
-  const elems = document.querySelectorAll('.tilt');
-  const universalTilt = new UniversalTilt(elems, {
-    base: 'window'
-  });
-  universalTilt();
-  */
+
   gsap.to('.parallax-bg', {scrollTrigger: {
     scrub: true
   }, y: (i, target) => - ScrollTrigger.maxScroll(window) * target.dataset.speed, ease: 'none'});
