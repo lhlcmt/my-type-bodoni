@@ -27,7 +27,7 @@ html {
   grid-template-areas:
     'top top top top top issue'
     'basic basic basic basic basic basic'
-    'main1 main1 main1 main1 main1 main1'
+    'widths widths main1 main1 main1 main1'
     'char char char char char char'
     'main2 main2 main2 main2 main2 main2'
     'quote1 quote1 quote1 seen seen seen'
@@ -210,6 +210,38 @@ html {
   font-weight: 200;
   text-shadow: 5px 5px 10px var(--colour3);
   line-height: 2rem;
+}
+
+/*_____BODONI WIDTHS HOVER_____*/
+
+.widths {
+  grid-area: widths;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: var(--colour1);
+  padding: 1rem;
+  font-family: 'Bodoni URW', serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.width-letter {
+  color: var(--colour5);
+  font-size: 4rem;
+  font-weight: 100;
+  margin: -2rem -2rem -2rem 2rem;
+  transition: 2s;
+  height: 100%;
+  justify-self: center;
+  transform: rotate(-90deg);
+}
+
+.width-letter:hover {
+  font-weight: 900;
+  transition: 2s;
+  color: var(--colour4);
 }
 
 /*_____MAIN CONTENT_____*/
@@ -418,7 +450,7 @@ h2 {
 }
 
 .seen-in-img-container:nth-of-type(1) {
-  margin-top: 150rem;
+  margin-top: 200rem;
 }
 
 .seen-in-img-container::before {
@@ -558,7 +590,7 @@ h2 {
 }
 
 .bodoni-variations-item:nth-of-type(1) {
-  margin-top: 145rem;
+  margin-top: 190rem;
 }
 
 .variation-img {

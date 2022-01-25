@@ -52,6 +52,15 @@
     </div>
   </div>
 
+  <div class="widths">
+    <p class="width-letter">i</p>
+    <p class="width-letter">n</p>
+    <p class="width-letter">o</p>
+    <p class="width-letter">d</p>
+    <p class="width-letter">o</p>
+    <p class="width-letter">B</p>
+  </div>
+
   <?php foreach($main_texts as $main_text): ?>
       <?php echo $main_text['title']; ?>
       <div class="main-content-div"><?php echo $main_text['text']; ?></div>
