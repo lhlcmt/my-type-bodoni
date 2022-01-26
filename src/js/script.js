@@ -72,7 +72,7 @@ export const init = () => {
     }
   };
   characteristics();
-
+/*
   const interactiveCanvas = () => {
     const canvas = document.querySelector('.dots-canvas');
     const ctx = canvas.getContext('2d');
@@ -167,5 +167,5 @@ export const init = () => {
     animate();
   };
   interactiveCanvas();
-
+*/
 };
