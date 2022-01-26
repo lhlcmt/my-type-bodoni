@@ -83,7 +83,6 @@ export const init = () => {
     const ymf = 0.02;
 
     document.addEventListener('mousemove', e => {
-      console.log(e);
       const {x, y} = e;
 
       const updateX = (0 - offset - (innerWidth / 2 - x)) * xmf;
