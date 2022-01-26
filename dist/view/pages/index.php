@@ -1,12 +1,17 @@
   <div class="infinite-scroll">
     <div class="infinite-scroll-1">
       <div class="infinite-scroll-2">
-        <h1  class="infinite-scroll-text">The use of Bodoni • The use of Bodoni • The use of Bodoni • The use of Bodoni •</h1>
+        <h1  class="infinite-scroll-text">The use of Bodoni • The use of Bodoni • The use of Bodoni • The use of Bodoni • The use of Bodoni • The use of Bodoni •The use of Bodoni • The use of Bodoni •</h1>
       </div>
     </div>
   </div>
 
 <section class="content">
+
+  <div class="empty1"></div>
+  <div class="empty2"></div>
+  <div class="empty3"></div>
+  <div class="empty4"></div>
 
   <div class="bodoni-top">
     <div class="bodoni-top-element">
@@ -99,7 +104,7 @@
 
   <div class="bodoni-seen-in">
     <?php foreach($seen_in_imgs as $seen_in_img):?>
-      <div class='seen-in-img-container parallax-bg' data-speed="1.7" >
+      <div class='seen-in-img-container parallax-bg' data-speed="1.5" >
         <?php echo $seen_in_img['path']; ?>
       </div>
     <?php endforeach; ?>
@@ -119,28 +124,21 @@
           <li>600</li>
       </ul>
     </div>
-    <img data-tilt data-base="window" class="foreground-image tilt" src="./assets/3d-foreground.png" alt="3d foreground image" height="100">
-    <img class="background-image" src="./assets/3d-background.png" alt="3d background image" height="100">
+    <img data-tilt data-base="window" class="foreground-image tilt" src="./assets/3d-foreground.png" alt="3d foreground image" height="50">
   </div>
 
   <div class="rules-bodoni">
     <p class="arrow">&#9660;</p>
-    <h2 class="rules-title">Rules of the 'Manuale Tipografico'</h2>
-    <div class="bodoni-rules">
-      <ul class="bodoni-rules-titles">
-        <li class="bodoni-rules-title">regularity:</li>
-        <li class="bodoni-rules-title">clarity:</li>
-        <li class="bodoni-rules-title">good taste:</li>
-        <li class="bodoni-rules-title">beauty:</li>
-      </ul>
-      <ul class="bodoni-rules-texts">
-        <li class="bodoni-rules-text">all letters must be constructed on a common base which defines them</li>
-        <li class="bodoni-rules-text">letters must be highly legible</li>
-        <li class="bodoni-rules-text">letters must fulfil their task without excessive affectations</li>
-        <li class="bodoni-rules-text">letters must be created with care and attention necessary without a time limit</li>
-      </ul>
+    <p class="rules-title">Rules of the 'Manuale Tipografico'</p>
+    <ul class="bodoni-rules">
+     <li class="bodoni-rule"><p class="bodoni-rules-title">regularity:</p><p class="bodoni-rules-text">all letters must be constructed on a common base which defines them</p></li>
+     <li class="bodoni-rule"><p class="bodoni-rules-title">clarity:</p><p class="bodoni-rules-text">letters must be highly legible</p></li>
+     <li class="bodoni-rule"><p class="bodoni-rules-title">good taste:</p><p class="bodoni-rules-text">letters must fulfil their task without excessive affectations</p></li>
+     <li class="bodoni-rule"><p class="bodoni-rules-title">beauty:</p><p class="bodoni-rules-text">letters must be created with care and attention necessary without a time limit</p></li>
     </div>
-  </div>
+    </ul>
+
+  <div class="biggif"></div>
 
   <div class="bodoni-variations">
     <?php foreach($var_svgs as $var_svg): ?>
@@ -161,6 +159,10 @@
     <p class="quote-text typewriter">Numerous typographers and designers redesigning Bodoni proves how timeless the font really is.</p>
   </div>
 
+  <div class="keys"></div>
+
+  <div class="layers"></div>
+
   <div class="bodoni-future">
     <p class="typewriter-text">Bodoni  is without a doubt synonymous with creation and artistic ability and will always be relevant in the world of fonts.</p>
   </div>
@@ -170,7 +172,7 @@
   <div class="infinite-scroll">
     <div class="infinite-scroll-1">
       <div class="infinite-scroll-2">
-        <h1  class="infinite-scroll-text">The use of Bodoni • The use of Bodoni • The use of Bodoni • The use of Bodoni •</h1>
+        <h1  class="infinite-scroll-text">The use of Bodoni • The use of Bodoni • The use of Bodoni • The use of Bodoni • The use of Bodoni • The use of Bodoni • The use of Bodoni • The use of Bodoni •</h1>
       </div>
     </div>
   </div>
