@@ -4,11 +4,9 @@ class Controller {
 
   public $route;
   protected $viewVars = array();
-  // set environment to development by default
   protected $mode = 'development';
 
   public function filter() {
-    // switch environment to production if the file is not in a folder named 'src'
     if (basename(dirname(dirname(__FILE__))) != 'src') {
       $this->mode = 'production';
     }
@@ -16,12 +14,9 @@ class Controller {
   }
 
   public function render() {
-    // set a variable js and css for the development environment (done by webpack dev server)
-    // 3000 is the port set in our webpack config
     $this->set('js', '<script src="http://localhost:3000/script.js"></script>');
     $this->set('css', '');
 
-    // link starting js and css files from the dist folder in production
     if ($this->mode == 'production') {
       $this->set('js', '<script src="script.js"></script>');
       $this->set('css', '<link href="style.css" rel="stylesheet">');
