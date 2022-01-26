@@ -72,100 +72,29 @@ export const init = () => {
     }
   };
   characteristics();
-/*
-  const interactiveCanvas = () => {
-    const canvas = document.querySelector('.dots-canvas');
-    const ctx = canvas.getContext('2d');
-    canvas.width = window.innerWidth;
-    canvas.height = 200;
-    let particleArray = [];
 
-    const mouse = {
-      x: null,
-      y: null,
-      radius: 150
-    };
+  const doubleEffect = () => {
+    const title1 = document.querySelector('.title-1');
+    const title2 = document.querySelector('.title-2');
+    const {innerWidth, innerHeight} = window;
 
-    canvas.addEventListener('mousemove', function(event) {
-      mouse.x = event.x;
-      mouse.y = event.y;
-      console.log(mouse.x, mouse.y);
+    const offset = 2;
+    const xmf = 0.009;
+    const ymf = 0.02;
+
+    document.addEventListener('mousemove', e => {
+      const {x, y} = e;
+
+      const updateX = (0 - offset - (innerWidth / 2 - x)) * xmf;
+      const updateY = (0 - offset - (innerHeight / 2 - y)) * ymf;
+
+      const updateX2 = (0 + offset + (innerWidth / 2 - x)) * xmf;
+      const updateY2 = (0 + offset + (innerHeight / 2 - y)) * ymf;
+
+      title1.style.transform = `translate(${updateX}px, ${updateY}px)`;
+      title2.style.transform = `translate(${updateX2}px, ${updateY2}px)`;
     });
-
-    ctx.fillStyle = '#d88dff';
-    ctx.font = '30px Bodoni URW';
-    ctx.fillText('Bodoni', 20, 20);
-    ctx.strokeStyle = 'white';
-    ctx.strokeRect(0, 0, 150, 100);
-    const textCoordinates = ctx.getImageData(0, 0, 150, 100);
-
-    class Particle {
-      constructor(x, y) {
-        this.x = x;
-        this.y = y;
-        this.size = 1;
-        this.baseX = this.x;
-        this.baseY = this.y;
-        this.density = (Math.random() * 30) + 1;
-      }
-      draw() {
-        ctx.fillStyle = '#d88dff';
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.closePath();
-        ctx.fill();
-      }
-      update() {
-        const dx = mouse.x - this.x;
-        const dy = mouse.y - this.y;
-        const distance = Math.sqrt(dx * dx + dy * dy);
-        const forceDirectionX = dx / distance;
-        const forceDirectionY = dy / distance;
-        const maxDistance = mouse.radius;
-        const force = (maxDistance - distance) / maxDistance;
-        const directionX = forceDirectionX * force * this.density;
-        const directionY = forceDirectionY * force * this.density;
-        if (distance < mouse.radius) {
-          this.x -= directionX;
-          this.y -= directionY;
-        } else {
-          if (this.x !== this.baseX) {
-            const dx = this.x - this.baseX;
-            this.x -= dx / 10;
-          }
-          if (this.x !== this.baseY) {
-            const dy = this.y - this.baseY;
-            this.y -= dy / 10;
-          }
-        }
-      }
-    }
-
-    function init() {
-      particleArray = [];
-      for (let y = 0, y2 = textCoordinates.height;y < y2;y ++) {
-        for (let x = 0, x2 = textCoordinates.width;x < x2;x ++) {
-          if (textCoordinates.data[(y * 4 * textCoordinates.width) + (x * 4) + 3] > 128) {
-            const positionX = x;
-            const positionY = y;
-            particleArray.push(new Particle(positionX * 10, positionY * 10));
-          }
-        }
-      }
-    }
-    init();
-    console.log(particleArray);
-
-    function animate() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      for (let i = 0;i < particleArray.length;i ++) {
-        particleArray[i].draw();
-        particleArray[i].update();
-      }
-      requestAnimationFrame(animate);
-    }
-    animate();
   };
-  interactiveCanvas();
-*/
+  doubleEffect();
+
 };

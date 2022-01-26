@@ -94,8 +94,11 @@
     </ul>
   </div>
 
-  <div class="dots">
-      <canvas class="dots-canvas"></canvas>
+  <div class="hover-double">
+    <div class="titles">
+      <p class="title-1">N.1<br>in<br>elegance</p>
+      <p class="title-2">N.1<br>in<br>elegance</p>
+    </div>
   </div>
 
   <div class="quote1">
@@ -150,10 +153,10 @@
     <?php endforeach; ?>
   </div>
 
-  <div class="gif1"><lottie-player src="./assets/bodoni-double-lottie.json" speed="1" style="width: 100%; height: 100%;" hover loop  autoplay></lottie-player></div>
-  <div class="gif2"><lottie-player src="./assets/bodoni-versions-lottie.json" speed="1" style="width: 100%; height: 100%;" hover loop  autoplay></lottie-player></div>
-  <div class="gif3"><lottie-player src="./assets/bodoni-wriggle-lottie.json" speed="1" style="width: 100%; height: 100%;" hover loop  autoplay></lottie-player></div>
-  <div class="gif4"><lottie-player src="./assets/bodoni-stretch-lottie.json" speed="1" style="width: 100%; height: 100%;" hover loop  autoplay></lottie-player></div>
+  <div class="gif1"><lottie-player src="./assets/bodoni-double-lottie.json" speed="1" style="width: 100%; height: 100%;" loop  autoplay></lottie-player></div>
+  <div class="gif2"><lottie-player src="./assets/bodoni-versions-lottie.json" speed="1" style="width: 100%; height: 100%;" loop  autoplay></lottie-player></div>
+  <div class="gif3"><lottie-player src="./assets/bodoni-wriggle-lottie.json" speed="1" style="width: 100%; height: 100%;" loop  autoplay></lottie-player></div>
+  <div class="gif4"><lottie-player src="./assets/bodoni-stretch-lottie.json" speed="1" style="width: 100%; height: 100%;" loop  autoplay></lottie-player></div>
 
   <div class="quote2">
     <p class="quote-text typewriter">Numerous typographers and designers redesigning Bodoni proves how timeless the font really is.</p>
