@@ -176,7 +176,6 @@ html {
 
 .issue-barcode {
   transform: rotate(90deg);
-  align-self: baseline;
   margin-top: auto;
   margin-bottom: 4rem;
   margin-left: auto;
@@ -189,6 +188,7 @@ html {
   grid-area: basic;
   background-image: url(assets/portrait-giambattista.gif);
   background-size: cover;
+  background-position: center;
 }
 
 .basic-info-text {
@@ -268,6 +268,7 @@ h2 {
   margin: 1rem;
   font-size: 14px;
   line-height: 1.1rem;
+  font-weight: 100;
 }
 
 .main-content1 {
@@ -412,6 +413,12 @@ h2 {
   background-color: var(--colour1);
   display: none;
 }
+
+.dots-canvas {
+  height: 100%;
+  width: 100%;
+}
+
 /*_____QUOTES_____*/
 
 .quote1 {
@@ -465,7 +472,7 @@ h2 {
   position: absolute;
   top: -.5rem;
   left: -.5rem;
-  width: 100%;
+  width: 37vw;
   height: 100%;
   border: .12rem solid var(--colour3);
   content: '';
@@ -476,25 +483,19 @@ h2 {
 .effect-3d {
   grid-area: man;
   width: 100%;
-}
-
-.background-image {
-  width: 100%;
-  height: auto;
+  background-image: url(assets/3d-background.png);
+  background-size: cover;
 }
 
 .foreground-image {
   width: 100%;
   height: auto;
-  position: absolute;
 }
 
 .effect-title {
   color: var(--colour3);
-  position: absolute;
-  text-align: right;
-  width: 100%;
   font-size: 30px;
+  position: absolute;
   padding: 1rem;
   line-height: 2rem;
   z-index: 2;
@@ -506,8 +507,8 @@ h2 {
   gap: 1rem;
   position: absolute;
   z-index: 2;
-  margin-top: 70%;
-  margin-left: 1rem;
+  margin-left: 2rem;
+  margin-top: 14rem;
 }
 
 /*_____BODONI RULES_____*/
@@ -515,36 +516,33 @@ h2 {
 .rules-bodoni {
   grid-area: rul;
   background-color: var(--colour1);
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 .rules-title {
+  color: var(--colour4);
+  font-style: oblique;
+  font-size: 30px;
+  padding: 1rem;
   font-weight: 400;
-  text-align: right;
   margin-top: 1rem;
 }
 
-.bodoni-rules {
+.bodoni-rule {
   color: var(--colour3);
   display: grid;
-  grid-template-columns: auto auto;
-  gap: .7rem;
-  padding: 2rem 1rem;
+  grid-template-columns: 1fr 3fr;
+  gap: .6rem;
+  margin: 1rem;
 }
 
-.bodoni-rules-titles {
+.bodoni-rules-title {
   white-space: nowrap;
   font-weight: 400;
   font-style: oblique;
-  display: grid;
-  grid-template-rows: 1fr .5fr .75fr 1fr;
-  gap: .7rem;
 }
 
-.bodoni-rules-texts {
-  display: grid;
-  grid-template-rows: 1fr .5fr .75fr 1fr;
-  gap: .7rem;
+.bodoni-rules-text {
   font-weight: 200;
   line-height: 1.3rem;
 }
@@ -553,7 +551,13 @@ h2 {
   color: var(--colour2);
   width: 2rem;
   margin: auto;
-  margin-top: -1.1rem;
+  margin-top: -1.6rem;
+}
+
+/*_____BIG GIF_____*/
+
+.biggif {
+  display: none;
 }
 
 /*_____DIGITAL ERA_____*/
@@ -780,3 +784,289 @@ h2 {
   to { transform: translateX(-50%); }
 }
 /* stylelint-enable */
+
+.empty1 {
+  display: none;
+}
+
+.empty2 {
+  display: none;
+}
+
+.empty3 {
+  display: none;
+}
+
+.empty4 {
+  display: none;
+}
+
+.keys {
+  display: none;
+}
+
+@media only screen and (min-width: 1040px) {
+
+  .navigation {
+    grid-template-columns: 1fr .8fr;
+    grid-template-rows: auto;
+    grid-template-areas: 'logo nav';
+  }
+
+  .slanted-logo-big {
+    height: 40px;
+  }
+
+  .line {
+    opacity: 0%;
+  }
+
+  .content {
+    display: grid;
+    max-width: 100%;
+    height: 100%;
+    grid-template-rows: 26rem auto auto 8vw auto 15rem 36vw auto 15rem auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      'top top top top top basic basic basic basic basic issue'
+      'top top top top top char char char char char char'
+      'main1 main1 main1 main1 main1 char char char char char char'
+      'main1 main1 main1 main1 main1 dots dots dots dots quote1 quote1'
+      'widths widths widths widths widths dots dots dots dots quote1 quote1'
+      'empty1 empty1 main2 main2 main2 main2 main2 main2 main2 seen seen'
+      'man man man man rul rul rul rul rul seen seen'
+      'main3 main3 main3 main3 main3 main3 big big big big big'
+      'empty2 empty2 var var var var big big big big big'
+      'quote2 quote2 quote2 keys keys keys keys keys keys keys keys'
+      'gif1 gif1 gif2 gif2 gif3 gif3 dig dig dig dig dig'
+      'empty3 empty3 layers layers layers layers layers empty4 empty4 empty4 empty4'
+      'empty3 empty3 layers layers layers layers layers empty4 empty4 empty4 empty4'
+      'main4 main4 main4 main4 main4 main4 fut fut fut fut fut';
+    gap: .1rem;
+  }
+
+  .main-text-expl {
+    font-size: 16px;
+    margin: 2rem 2rem .5rem;
+  }
+
+  h2 {
+    margin-right: 1rem;
+  }
+
+  .gif4 {
+    display: none;
+  }
+
+  .bodoni-top-element {
+    margin-bottom: 0;
+  }
+
+  .bodoni-top-element-title {
+    font-size: 16vw;
+    margin-left: -4rem;
+  }
+
+  .bodoni-top-element-style {
+    margin-top: -4.5rem;
+  }
+
+  .bodoni-top-line {
+    width: 8rem;
+  }
+
+  .seen-in-img {
+    width: 12vw;
+  }
+
+  .seen-in-img-container::before {
+    width: 12vw;
+  }
+
+  .circle {
+    width: 4vw;
+    height: 4vw;
+  }
+
+  .widths {
+    flex-direction: row-reverse;
+    gap: 2rem;
+  }
+
+  .width-letter {
+    transform: rotate(0deg);
+    font-size: 5rem;
+    margin: 0;
+    margin-bottom: -.8rem;
+  }
+
+  .dots {
+    display: block;
+  }
+
+  .quote-text {
+    font-size: 16px;
+    line-height: 1.2rem;
+  }
+
+  .seen-in-img-container:nth-of-type(1) {
+    margin-top: 100rem;
+  }
+
+  .bodoni-variations-item:nth-of-type(1) {
+    margin-top: 85rem;
+  }
+
+  .bodoni-rules {
+    max-width: 30rem;
+  }
+
+  .empty1 {
+    display: block;
+    grid-area: empty1;
+    background-color: var(--colour1);
+  }
+
+  .empty2 {
+    display: block;
+    grid-area: empty2;
+    background-color: var(--colour1);
+  }
+
+  .empty3 {
+    display: block;
+    grid-area: empty3;
+    background-color: var(--colour1);
+  }
+
+  .empty4 {
+    display: block;
+    grid-area: empty4;
+    background-color: var(--colour1);
+  }
+
+  .biggif {
+    display: block;
+    grid-area: big;
+    background-color: var(--colour1);
+  }
+
+  .keys {
+    display: block;
+    grid-area: keys;
+    background-color: var(--colour1);
+  }
+
+  .arrow {
+    transform: rotate(-90deg);
+    position: absolute;
+    width: 2rem;
+    margin-top: 0;
+    margin-left: -2.1rem;
+  }
+
+  .rules-title {
+    margin-top: 0;
+  }
+
+  .layers {
+    grid-area: layers;
+    background-color: var(--colour1);
+    height: 10rem;
+  }
+
+  /*_______*/
+
+  .infinite-scroll {
+    height: 5rem;
+  }
+
+  .infinite-scroll-text {
+    font-size: 50px;
+  }
+
+  .nav-list {
+    align-items: center;
+    margin: .5rem 1rem;
+  }
+
+  .link {
+    font-size: 19px;
+  }
+
+  .navigation-footer {
+    grid-template-columns: 1fr 1fr auto;
+    grid-template-areas:
+      'x nav logo'
+      'mark nav logo';
+  }
+
+  .slanted-logo-small {
+    height: 130px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .bodoni-top-element-title {
+    font-size: 15vw;
+  }
+
+  .content {
+    grid-template-rows: 26rem auto 9vw 12vw auto 15rem 36vw auto 15rem auto auto auto auto auto;
+    grid-template-areas:
+      'top top top top top basic basic basic basic basic issue'
+      'top top top top top char char char char char char'
+      'main1 main1 main1 main1 main1 char char char char char char'
+      'main1 main1 main1 main1 main1 dots dots dots dots quote1 quote1'
+      'widths widths widths widths widths dots dots dots dots quote1 quote1'
+      'empty1 empty1 main2 main2 main2 main2 main2 main2 main2 seen seen'
+      'man man man man rul rul rul rul rul seen seen'
+      'main3 main3 main3 main3 main3 main3 big big big big big'
+      'empty2 empty2 var var var var big big big big big'
+      'quote2 quote2 quote2 keys keys keys keys keys keys keys keys'
+      'gif1 gif1 gif2 gif2 gif3 gif3 gif4 gif4 dig dig dig'
+      'empty3 empty3 layers layers layers layers layers empty4 empty4 empty4 empty4'
+      'empty3 empty3 layers layers layers layers layers empty4 empty4 empty4 empty4'
+      'main4 main4 main4 main4 main4 main4 fut fut fut fut fut';
+  }
+
+  .gif4 {
+    display: block;
+  }
+
+  .effect-info {
+    margin-top: 19rem;
+  }
+
+  .seen-in-img-container:nth-of-type(1) {
+    margin-top: 90rem;
+  }
+
+  .bodoni-variations-item:nth-of-type(1) {
+    margin-top: 75rem;
+  }
+
+}
+
+@media only screen and (min-width: 1550px) {
+
+  .content {
+    grid-template-rows: 26rem auto 6vw 12vw auto 15rem 36vw auto 15rem auto auto auto auto auto;
+  }
+
+  .seen-in-img-container:nth-of-type(1) {
+    margin-top: 80rem;
+  }
+
+  .bodoni-variations-item:nth-of-type(1) {
+    margin-top: 75rem;
+  }
+}
+
+@media only screen and (min-width: 1750px) {
+
+  .content {
+    grid-template-rows: 26rem auto 2vw 12vw auto 15rem 36vw auto 15rem auto auto auto auto auto;
+  }
+}
