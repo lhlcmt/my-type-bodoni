@@ -12,7 +12,7 @@
 <body>
 
     <nav class="navigation">
-        <img class="slanted-logo-big" src="assets/slanted-logo.svg" height="32" alt="slanted big logo">
+        <a href="https://www.slanted.de/" target="_blank"><img class="slanted-logo-big" src="assets/slanted-logo.svg" height="32" alt="slanted big logo"></a>
         <div class="line"></div>
         <ul class="nav-list">
             <li><a class="link" href="#origin">ORIGIN</a></li>
@@ -25,7 +25,7 @@
       <?php echo $content;?>
 
     <footer class="navigation-footer">
-        <img class="slanted-logo-small" src="assets/slanted-logo-small.png" height="93" alt="slanted small logo">
+        <a href="https://www.slanted.de/" target="_blank"><img class="slanted-logo-small" src="assets/slanted-logo-small.png" height="93" alt="slanted small logo"></a>
         <ul class="footer-nav">
             <li><a class="footer-nav-item" href="#origin">ORIGIN</a></li>
             <li><a class="footer-nav-item" href="#use">USE</a></li>
