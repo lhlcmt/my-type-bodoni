@@ -862,6 +862,18 @@ h2 {
       'main4 main4 main4 main4 main4 main4'
       'fut fut fut fut fut fut';
   }
+
+  .seen-in-img-container:nth-of-type(1) {
+    margin-top: 45rem;
+  }
+
+  .bodoni-variations-item:nth-of-type(1) {
+    margin-top: 91rem;
+  }
+
+  .effect-info {
+    margin-top: 20rem;
+  }
 }
 
 @media only screen and (min-width: 750px) {
@@ -871,7 +883,7 @@ h2 {
   }
 
   .content {
-    grid-template-rows: auto 28rem auto auto 18rem 15rem 24rem auto auto 15rem auto auto auto 12rem;
+    grid-template-rows: auto 28rem auto auto 18rem 15rem 24rem 5rem auto 15rem auto auto auto 12rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
       'top top top issue issue issue'
@@ -888,6 +900,10 @@ h2 {
       'dig dig dig dig dig dig'
       'main4 main4 main4 main4 main4 main4'
       'fut fut fut fut fut fut';
+  }
+
+  .effect-info {
+    margin-top: 15rem;
   }
 
   .seen-in-img {
@@ -920,7 +936,7 @@ h2 {
     margin-top: auto;
     margin-bottom: 1rem;
     margin-left: auto;
-    margin-right: -2.6rem;
+    margin-right: 0;
   }
 
   .empty1 {
@@ -956,6 +972,47 @@ h2 {
   }
 }
 
+@media only screen and (min-width: 850px) {
+
+  .content {
+    grid-template-rows: auto 28rem auto auto 18rem 15rem 24rem auto 15rem auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      'top top top issue issue issue'
+      'top top top basic basic basic'
+      'main1 main1 main1 main1 main1 main1'
+      'widths char char char char char'
+      'main2 main2 main2 main2 seen seen'
+      'empty1 empty1 quote1 quote1 seen seen'
+      'man man man rul rul rul'
+      'main3 main3 main3 main3 main3 main3'
+      'var var var var quote2 quote2'
+      'empty2 gif1 gif2 gif3 gif4 empty3'
+      'dig dig dig dig dig dig'
+      'main4 main4 main4 fut fut fut';
+  }
+}
+
+@media only screen and (min-width: 900px) {
+
+  .content {
+    grid-template-rows: auto 28rem auto auto 18rem 15rem 30rem auto 15rem auto auto auto;
+    grid-template-areas:
+      'top top top issue issue issue'
+      'top top top basic basic basic'
+      'main1 main1 main1 main1 main1 main1'
+      'widths char char char char char'
+      'main2 main2 main2 main2 seen seen'
+      'empty1 empty1 quote1 quote1 seen seen'
+      'man man man rul rul rul'
+      'main3 main3 main3 main3 main3 main3'
+      'var var var var quote2 quote2'
+      'empty2 gif1 gif2 gif3 gif4 empty3'
+      'dig dig dig dig dig dig'
+      'main4 main4 main4 fut fut fut';
+  }
+}
+
 @media only screen and (min-width: 1040px) {
 
   .navigation {
@@ -976,7 +1033,7 @@ h2 {
     display: grid;
     max-width: 100%;
     height: 100%;
-    grid-template-rows: 26rem auto auto 8vw auto 15rem 36vw auto 15rem auto auto auto auto auto;
+    grid-template-rows: 26rem auto auto 15vw auto 15rem 36vw auto 15rem auto auto auto auto auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
       'top top top top top basic basic basic basic basic issue'
@@ -994,6 +1051,26 @@ h2 {
       'empty3 empty3 layers layers layers layers layers empty4 empty4 empty4 empty4'
       'main4 main4 main4 main4 main4 main4 fut fut fut fut fut';
     gap: .1rem;
+  }
+
+  .issue {
+    flex-direction: column;
+  }
+
+  .issue-number {
+    transform: rotate(90deg);
+    margin-bottom: auto;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: -1rem;
+  }
+
+  .issue-barcode {
+    transform: rotate(90deg);
+    margin-top: auto;
+    margin-bottom: 4rem;
+    margin-left: auto;
+    margin-right: -2.6rem;
   }
 
   .main-text-expl {
