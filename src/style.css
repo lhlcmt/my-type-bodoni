@@ -13,7 +13,7 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-size: 100%;
-  font-family: 'brother-1816', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 300;
   background-color: var(--colour2);
@@ -82,7 +82,7 @@ html {
 
 .link {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
   color: var(--colour1);
   border: .1rem solid var(--colour2);
@@ -104,6 +104,7 @@ html {
   background-color: var(--colour1);
   padding: 2rem 0;
   grid-area: top;
+  overflow: hidden;
 }
 
 .bodoni-top-element {
@@ -115,9 +116,9 @@ html {
 
 .bodoni-top-element-title {
   color: var(--colour4);
-  font-family: 'Bodoni URW', serif;
-  font-size: 27vw;
-  margin-left: -1.5rem;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 25vw;
+  margin-left: -2.5rem;
 }
 
 .title1 {
@@ -136,7 +137,6 @@ html {
 .bodoni-top-element-style {
   margin-left: auto;
   margin-right: 1rem;
-  margin-top: -1rem;
   display: flex;
   align-items: center;
   gap: .5rem;
@@ -222,7 +222,7 @@ html {
   height: 100%;
   background-color: var(--colour1);
   padding: 1rem;
-  font-family: 'Bodoni URW', serif;
+  font-family: 'Bodoni Moda', serif;
   justify-content: center;
   align-items: center;
 }
@@ -253,7 +253,7 @@ html {
 
 h2 {
   color: var(--colour4);
-  font-weight: 500;
+  font-weight: 600;
   font-style: oblique;
   font-size: 30px;
   text-align: right;
@@ -268,7 +268,7 @@ h2 {
   margin: 1rem;
   font-size: 14px;
   line-height: 1.1rem;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 .main-content1 {
@@ -421,7 +421,7 @@ h2 {
 .title-1, .title-2 {
   padding: 1rem;
   font-size: 5rem;
-  font-family: 'Bodoni URW', serif;
+  font-family: 'Bodoni Moda', serif;
   opacity: 70%;
 }
 
@@ -455,7 +455,7 @@ h2 {
 .quote-text {
   color: var(--colour3);
   font-style: oblique;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 18px;
   line-height: 1.4rem;
 }
@@ -517,6 +517,7 @@ h2 {
   padding: 1rem;
   line-height: 2rem;
   z-index: 2;
+  font-weight: 400;
 }
 
 .effect-info {
@@ -594,7 +595,7 @@ h2 {
   margin: 1rem;
   font-size: 14px;
   line-height: 1.2rem;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 .digital-era-basic-info {
@@ -702,7 +703,7 @@ h2 {
 .typewriter-text {
   color: var(--colour3);
   padding: 2rem 1rem;
-  font-weight: 200;
+  font-weight: 300;
   text-shadow: 5px 5px 10px var(--colour3);
   font-size: 17px;
   line-height: 1.3rem;
@@ -734,7 +735,7 @@ h2 {
 }
 
 .footer-nav-item {
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
   color: var(--colour1);
   font-size: 18px;
@@ -792,7 +793,7 @@ h2 {
 }
 
 .infinite-scroll-text {
-  font-family: 'Bodoni URW', serif;
+  font-family: 'Bodoni Moda', serif;
   font-weight: 700;
   font-style: oblique;
   font-size: 33px;
@@ -886,7 +887,7 @@ h2 {
   }
 
   .content {
-    grid-template-rows: auto 28rem auto auto 18rem 15rem 24rem 5rem auto 15rem auto auto auto 12rem;
+    grid-template-rows: auto 28rem auto auto 18rem 15rem 24rem 7rem auto 15rem auto auto auto 12rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
       'top top top issue issue issue'
@@ -978,7 +979,7 @@ h2 {
 @media only screen and (min-width: 850px) {
 
   .content {
-    grid-template-rows: auto 28rem auto auto 18rem 15rem 24rem auto 15rem auto auto auto;
+    grid-template-rows: auto 28rem auto auto 18rem 15rem 26rem auto 15rem auto auto auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
       'top top top issue issue issue'
@@ -1029,7 +1030,7 @@ h2 {
   }
 
   .line {
-    opacity: 0%;
+    display: none;
   }
 
   .content {
@@ -1096,10 +1097,6 @@ h2 {
   .bodoni-top-element-title {
     font-size: 16vw;
     margin-left: -4rem;
-  }
-
-  .bodoni-top-element-style {
-    margin-top: -4.5rem;
   }
 
   .bodoni-top-line {
