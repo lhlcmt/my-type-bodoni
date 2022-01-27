@@ -131,12 +131,10 @@ html {
 }
 
 .title3 {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .bodoni-top-element-style {
-  margin-left: auto;
-  margin-right: 1rem;
   display: flex;
   align-items: center;
   gap: .5rem;
@@ -145,7 +143,7 @@ html {
 .bodoni-top-line {
   background-color: var(--colour5);
   height: 1px;
-  width: 5rem;
+  width: 2rem;
 }
 
 .bodoni-top-element-style-text {
@@ -483,7 +481,7 @@ h2 {
 }
 
 .seen-in-img-container:nth-of-type(1) {
-  margin-top: 150rem;
+  margin-top: 130rem;
 }
 
 .seen-in-img-container::before {
@@ -625,7 +623,7 @@ h2 {
 }
 
 .bodoni-variations-item:nth-of-type(1) {
-  margin-top: 143rem;
+  margin-top: 130rem;
 }
 
 .variation-img {
@@ -868,11 +866,11 @@ h2 {
   }
 
   .seen-in-img-container:nth-of-type(1) {
-    margin-top: 45rem;
+    margin-top: 90rem;
   }
 
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 91rem;
+    margin-top: 135rem;
   }
 
   .effect-info {
@@ -968,11 +966,11 @@ h2 {
   }
 
   .seen-in-img-container:nth-of-type(1) {
-    margin-top: 55rem;
+    margin-top: 90rem;
   }
 
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 85rem;
+    margin-top: 130rem;
   }
 }
 
@@ -1015,6 +1013,7 @@ h2 {
       'dig dig dig dig dig dig'
       'main4 main4 main4 fut fut fut';
   }
+
 }
 
 @media only screen and (min-width: 1040px) {
@@ -1100,7 +1099,7 @@ h2 {
   }
 
   .bodoni-top-line {
-    width: 8rem;
+    width: 4rem;
   }
 
   .seen-in-img {
@@ -1138,11 +1137,11 @@ h2 {
   }
 
   .seen-in-img-container:nth-of-type(1) {
-    margin-top: 100rem;
+    margin-top: 130rem;
   }
 
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 85rem;
+    margin-top: 120rem;
   }
 
   .bodoni-rules {
@@ -1247,11 +1246,11 @@ h2 {
   }
 
   .seen-in-img-container:nth-of-type(1) {
-    margin-top: 90rem;
+    margin-top: 110rem;
   }
 
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 85rem;
+    margin-top: 115rem;
   }
 
 }
@@ -1263,11 +1262,11 @@ h2 {
   }
 
   .seen-in-img-container:nth-of-type(1) {
-    margin-top: 80rem;
+    margin-top: 120rem;
   }
 
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 75rem;
+    margin-top: 120rem;
   }
 }
 

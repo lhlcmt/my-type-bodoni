@@ -32,7 +32,7 @@
       <p class="bodoni-top-element-title title3">Bodoni</p>
       <div class="bodoni-top-element-style">
         <div class="bodoni-top-line"></div>
-        <p class="bodoni-top-element-style-text">ver.1 medium</p>
+        <p class="bodoni-top-element-style-text">ver.3 bold</p>
       </div>
     </div>
   </div>
