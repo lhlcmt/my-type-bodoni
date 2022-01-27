@@ -844,7 +844,6 @@ h2 {
   }
 
   .content {
-    max-width: 100%;
     grid-template-rows: auto 30rem auto auto 25rem 10rem auto auto auto 15rem auto auto auto 12rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
@@ -862,7 +861,98 @@ h2 {
       'gif4 gif4 dig dig dig dig'
       'main4 main4 main4 main4 main4 main4'
       'fut fut fut fut fut fut';
-    gap: .1rem;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+
+  .line {
+    opacity: 0%;
+  }
+
+  .content {
+    grid-template-rows: auto 28rem auto auto 18rem 15rem 24rem auto auto 15rem auto auto auto 12rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      'top top top issue issue issue'
+      'top top top basic basic basic'
+      'main1 main1 main1 main1 main1 main1'
+      'widths char char char char char'
+      'main2 main2 main2 main2 seen seen'
+      'quote1 quote1 quote1 quote1 seen seen'
+      'man man man rul rul rul'
+      'empty1 empty1 empty1 rul rul rul'
+      'main3 main3 main3 main3 main3 main3'
+      'var var var var quote2 quote2'
+      'empty2 gif1 gif2 gif3 gif4 empty3'
+      'dig dig dig dig dig dig'
+      'main4 main4 main4 main4 main4 main4'
+      'fut fut fut fut fut fut';
+  }
+
+  .seen-in-img {
+    width: 25vw;
+  }
+
+  .seen-in-img-container::before {
+    width: 25vw;
+  }
+
+  .bodoni-top-element-title {
+    font-size: 18vw;
+    margin-left: -3rem;
+  }
+
+  .issue {
+    flex-direction: row;
+  }
+
+  .issue-number {
+    transform: rotate(0deg);
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+  }
+
+  .issue-barcode {
+    transform: rotate(0deg);
+    margin-top: auto;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: -2.6rem;
+  }
+
+  .empty1 {
+    display: block;
+    grid-area: empty1;
+    background-color: var(--colour1);
+  }
+
+  .empty2 {
+    display: block;
+    grid-area: empty2;
+    background-color: var(--colour1);
+  }
+
+  .empty3 {
+    display: block;
+    grid-area: empty3;
+    background-color: var(--colour1);
+  }
+
+  .arrow {
+    transform: rotate(-90deg);
+    margin-left: -2.1rem;
+    margin-bottom: -.8rem;
+  }
+
+  .seen-in-img-container:nth-of-type(1) {
+    margin-top: 55rem;
+  }
+
+  .bodoni-variations-item:nth-of-type(1) {
+    margin-top: 85rem;
   }
 }
 
@@ -980,24 +1070,6 @@ h2 {
 
   .bodoni-rules {
     max-width: 30rem;
-  }
-
-  .empty1 {
-    display: block;
-    grid-area: empty1;
-    background-color: var(--colour1);
-  }
-
-  .empty2 {
-    display: block;
-    grid-area: empty2;
-    background-color: var(--colour1);
-  }
-
-  .empty3 {
-    display: block;
-    grid-area: empty3;
-    background-color: var(--colour1);
   }
 
   .empty4 {
