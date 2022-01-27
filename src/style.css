@@ -576,6 +576,9 @@ h2 {
 
 .biggif {
   display: none;
+  background-image: url(assets/big-gif.gif);
+  object-fit: cover;
+  background-position: center;
 }
 
 /*_____DIGITAL ERA_____*/
