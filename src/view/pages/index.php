@@ -162,7 +162,7 @@
     <p class="quote-text typewriter">Numerous typographers and designers redesigning Bodoni proves how timeless the font really is.</p>
   </div>
 
-  <div class="keys"></div>
+  <div class="keys"><p>hello</p></div>
 
   <div class="layers"></div>
 
