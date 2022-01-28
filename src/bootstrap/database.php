@@ -3,10 +3,10 @@ use Illuminate\Database\Capsule\Manager as Capsule;
 $capsule = new Capsule;
 $capsule->addConnection([
  'driver'    => 'mysql',
- 'host'      => 'ID338780_MyTypeBodoni.db.webhosting.be',
- 'database'  => 'ID338780_MyTypeBodoni',
- 'username'  => 'ID338780_MyTypeBodoni',
- 'password'  => 'Léah1252002',
+ 'host'      => getenv('PHP_DB_HOST') ?: 'mysql',
+ 'database'  => getenv('PHP_DB_DATABASE') ?: 'mytype',
+ 'username'  => getenv('PHP_DB_USERNAME') ?: 'root',
+ 'password'  => getenv('PHP_DB_PASSWORD') ?: 'devineforlife',
  'charset'   => 'utf8mb4',
  'collation' => 'utf8mb4_unicode_ci',
  'prefix'    => '',
