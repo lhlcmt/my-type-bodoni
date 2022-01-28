@@ -1,17 +1,17 @@
 <?php
 
 session_start();
-/*
+
 if (basename(dirname(dirname(__FILE__))) != 'src') {
   ini_set('display_errors', false);
 }else{
   ini_set('display_errors', true);
   error_reporting(E_ALL);
 }
-*/
+/*
 ini_set('display_errors', true);
 error_reporting(E_ALL);
-
+*/
 
 if (file_exists("../.env")) {
   $variables = parse_ini_file("../.env", true);
