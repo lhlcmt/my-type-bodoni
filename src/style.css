@@ -481,7 +481,7 @@ h2 {
 }
 
 .seen-in-img-container:nth-of-type(1) {
-  margin-top: 70rem;
+  margin-top: 80rem;
 }
 
 .seen-in-img-container::before {
@@ -623,7 +623,7 @@ h2 {
 }
 
 .bodoni-variations-item:nth-of-type(1) {
-  margin-top: 90rem;
+  margin-top: 95rem;
 }
 
 .variation-img {
@@ -826,6 +826,10 @@ h2 {
   display: none;
 }
 
+.layers {
+  display: none;
+}
+
 @media only screen and (min-width: 600px) {
 
   .navigation {
@@ -866,11 +870,11 @@ h2 {
   }
 
   .seen-in-img-container:nth-of-type(1) {
-    margin-top: 55rem;
+    margin-top: 60rem;
   }
 
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 90rem;
+    margin-top: 110rem;
   }
 
   .effect-info {
@@ -966,11 +970,11 @@ h2 {
   }
 
   .seen-in-img-container:nth-of-type(1) {
-    margin-top: 50rem;
+    margin-top: 70rem;
   }
 
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 90rem;
+    margin-top: 105rem;
   }
 }
 
@@ -1307,9 +1311,20 @@ h2 {
   }
 
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 80rem;
+    margin-top: 90rem;
   }
 
+}
+
+@media only screen and (min-width: 1350px) {
+
+  .seen-in-img-container:nth-of-type(1) {
+    margin-top: 90rem;
+  }
+
+  .bodoni-variations-item:nth-of-type(1) {
+    margin-top: 105rem;
+  }
 }
 
 @media only screen and (min-width: 1550px) {
@@ -1323,7 +1338,7 @@ h2 {
   }
 
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 80rem;
+    margin-top: 90rem;
   }
 
     .layer-hidden {
