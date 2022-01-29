@@ -189,7 +189,13 @@
     </ul>
   </div>
 
-  <div class="layers"></div>
+  <div class="layers">
+    <p class="layer-hidden">Bodoni</p>
+    <p class="layers-text">Bodoni</p>
+    <p class="layers-text">Bodoni</p>
+    <p class="layers-text">Bodoni</p>
+    <p class="layers-text">Bodoni</p>
+  </div>
 
   <div class="bodoni-future">
     <p class="typewriter-text">Bodoni  is without a doubt synonymous with creation and artistic ability and will always be relevant in the world of fonts.</p>
