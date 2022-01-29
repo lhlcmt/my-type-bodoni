@@ -1036,7 +1036,7 @@ h2 {
     display: grid;
     max-width: 100%;
     height: 100%;
-    grid-template-rows: 26rem auto auto 15vw auto 15rem 36vw auto 15rem auto auto auto auto auto;
+    grid-template-rows: 26rem auto auto 15vw auto 15rem 36vw auto 15rem 10rem auto auto auto auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
       'top top top top top basic basic basic basic basic issue'
@@ -1164,6 +1164,28 @@ h2 {
     display: block;
     grid-area: keys;
     background-color: var(--colour1);
+    overflow: hidden;
+  }
+
+  .keys-letters {
+    display: flex;
+    color: var(--colour5);
+    overflow: hidden;
+    flex-wrap: wrap;
+    font-family: 'Bodoni Mona', serif;
+  }
+
+  .key-l {
+    padding: .7rem;
+    margin: .2rem;
+    border: .1rem solid var(--colour5);
+    border-radius: .5rem;
+  }
+
+  .key-l:hover {
+    color: var(--colour4);
+    background-color: rgba(216, 141, 249, .4);
+    font-weight: 500;
   }
 
   .arrow {

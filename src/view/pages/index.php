@@ -162,7 +162,32 @@
     <p class="quote-text typewriter">Numerous typographers and designers redesigning Bodoni proves how timeless the font really is.</p>
   </div>
 
-  <div class="keys"><p>hello</p></div>
+  <div class="keys">
+    <ul class="keys-letters">
+      <li class="key-l">A</li><li class="key-l">B</li><li class="key-l">C</li><li class="key-l">D</li><li class="key-l">E</li><li class="key-l">F</li>
+      <li class="key-l">G</li><li class="key-l">H</li><li class="key-l">I</li><li class="key-l">J</li><li class="key-l">K</li><li class="key-l">L</li>
+      <li class="key-l">M</li><li class="key-l">N</li><li class="key-l">O</li><li class="key-l">P</li><li class="key-l">Q</li><li class="key-l">R</li>
+      <li class="key-l">S</li><li class="key-l">T</li><li class="key-l">U</li><li class="key-l">V</li><li class="key-l">W</li><li class="key-l">X</li>
+      <li class="key-l">Y</li><li class="key-l">Z</li>
+
+      <li class="key-l">a</li><li class="key-l">b</li><li class="key-l">c</li><li class="key-l">d</li><li class="key-l">e</li><li class="key-l">f</li>
+      <li class="key-l">g</li><li class="key-l">h</li><li class="key-l">i</li><li class="key-l">j</li><li class="key-l">k</li><li class="key-l">l</li>
+      <li class="key-l">m</li><li class="key-l">n</li><li class="key-l">o</li><li class="key-l">p</li><li class="key-l">q</li><li class="key-l">r</li>
+      <li class="key-l">s</li><li class="key-l">t</li><li class="key-l">u</li><li class="key-l">v</li><li class="key-l">w</li><li class="key-l">x</li>
+      <li class="key-l">y</li><li class="key-l">z</li>
+
+      <li class="key-l">æ</li><li class="key-l">ê</li><li class="key-l">œ</li><li class="key-l">î</li><li class="key-l">ë</li><li class="key-l">µ</li>
+      <li class="key-l">â</li><li class="key-l">∂</li><li class="key-l">π</li><li class="key-l">È</li><li class="key-l">ƒ</li><li class="key-l">Ò</li>
+      <li class="key-l">Ú</li><li class="key-l">Ï</li><li class="key-l">ﬁ</li><li class="key-l">ç</li><li class="key-l">§</li>
+
+      <li class="key-l">1</li><li class="key-l">2</li><li class="key-l">3</li><li class="key-l">4</li><li class="key-l">5</li><li class="key-l">6</li>
+      <li class="key-l">7</li><li class="key-l">8</li><li class="key-l">9</li>
+
+      <li class="key-l">!</li><li class="key-l">?</li><li class="key-l">+</li><li class="key-l">-</li><li class="key-l">*</li><li class="key-l">/</li>
+      <li class="key-l">=</li><li class="key-l">≈</li><li class="key-l">;</li><li class="key-l">:</li><li class="key-l">@</li><li class="key-l">#</li>
+      <li class="key-l">&</li><li class="key-l">(</li><li class="key-l">{</li><li class="key-l">[</li><li class="key-l">%</li>
+    </ul>
+  </div>
 
   <div class="layers"></div>
 
