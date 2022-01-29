@@ -1228,22 +1228,22 @@ h2 {
     overflow: hidden;
   }
 
-  .layers:hover > .layers-text:nth-of-type(1) {
-    padding-left: 2rem;
+  .layers:hover > .layers-text:nth-of-type(3) {
+    padding-left: 3rem;
     transition: ease-in-out .7s;
-    color: rgba(216, 141, 249, .8);
+    color: rgba(216, 141, 249, .7);
   }
 
-  .layers:hover > .layers-text:nth-of-type(2) {
-    padding-left: 4rem;
+  .layers:hover > .layers-text:nth-of-type(4) {
+    padding-left: 5rem;
     transition: ease-in-out .7s;
     color: rgba(216, 141, 249, .5);
   }
 
-  .layers:hover > .layers-text:nth-of-type(3) {
-    padding-left: 6rem;
+  .layers:hover > .layers-text:nth-of-type(5) {
+    padding-left: 7rem;
     transition: ease-in-out .7s;
-    color: rgba(216, 141, 249, .2);
+    color: rgba(216, 141, 249, .3);
   }
 
   .digital-era-expl {
