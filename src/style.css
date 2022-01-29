@@ -481,7 +481,7 @@ h2 {
 }
 
 .seen-in-img-container:nth-of-type(1) {
-  margin-top: 130rem;
+  margin-top: 70rem;
 }
 
 .seen-in-img-container::before {
@@ -623,7 +623,7 @@ h2 {
 }
 
 .bodoni-variations-item:nth-of-type(1) {
-  margin-top: 130rem;
+  margin-top: 90rem;
 }
 
 .variation-img {
@@ -866,11 +866,11 @@ h2 {
   }
 
   .seen-in-img-container:nth-of-type(1) {
-    margin-top: 90rem;
+    margin-top: 55rem;
   }
 
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 135rem;
+    margin-top: 90rem;
   }
 
   .effect-info {
@@ -966,11 +966,11 @@ h2 {
   }
 
   .seen-in-img-container:nth-of-type(1) {
-    margin-top: 90rem;
+    margin-top: 50rem;
   }
 
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 130rem;
+    margin-top: 90rem;
   }
 }
 
@@ -1036,7 +1036,7 @@ h2 {
     display: grid;
     max-width: 100%;
     height: 100%;
-    grid-template-rows: 26rem auto auto 15vw auto 15rem 36vw auto 15rem auto auto auto auto auto;
+    grid-template-rows: 26rem auto auto 15vw auto 15rem 36vw auto 15rem 10rem auto auto auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
       'top top top top top basic basic basic basic basic issue'
@@ -1050,8 +1050,7 @@ h2 {
       'empty2 empty2 var var var var big big big big big'
       'quote2 quote2 quote2 keys keys keys keys keys keys keys keys'
       'gif1 gif1 gif2 gif2 gif3 gif3 dig dig dig dig dig'
-      'empty3 empty3 layers layers layers layers layers empty4 empty4 empty4 empty4'
-      'empty3 empty3 layers layers layers layers layers empty4 empty4 empty4 empty4'
+      'empty3 empty3 layers layers layers layers layers layers layers empty4 empty4'
       'main4 main4 main4 main4 main4 main4 fut fut fut fut fut';
     gap: .1rem;
   }
@@ -1137,11 +1136,11 @@ h2 {
   }
 
   .seen-in-img-container:nth-of-type(1) {
-    margin-top: 130rem;
+    margin-top: 100rem;
   }
 
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 120rem;
+    margin-top: 90rem;
   }
 
   .bodoni-rules {
@@ -1164,6 +1163,28 @@ h2 {
     display: block;
     grid-area: keys;
     background-color: var(--colour1);
+    overflow: hidden;
+  }
+
+  .keys-letters {
+    display: flex;
+    color: var(--colour5);
+    overflow: hidden;
+    flex-wrap: wrap;
+    font-family: 'Bodoni Mona', serif;
+  }
+
+  .key-l {
+    padding: .7rem;
+    margin: .2rem;
+    border: .1rem solid var(--colour5);
+    border-radius: .5rem;
+  }
+
+  .key-l:hover {
+    color: var(--colour4);
+    background-color: rgba(216, 141, 249, .4);
+    font-weight: 500;
   }
 
   .arrow {
@@ -1181,7 +1202,44 @@ h2 {
   .layers {
     grid-area: layers;
     background-color: var(--colour1);
-    height: 10rem;
+    justify-content: left;
+    align-items: center;
+    padding: auto;
+    display: flex;
+    height: fit-content;
+  }
+
+  .layer-hidden {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 10rem;
+    color: var(--colour1);
+  }
+
+  .layers-text {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 10rem;
+    color: var(--colour4);
+    position: absolute;
+    transition: ease-in-out .7s;
+    overflow: hidden;
+  }
+
+  .layers:hover > .layers-text:nth-of-type(1) {
+    padding-left: 2rem;
+    transition: ease-in-out .7s;
+    color: rgba(216, 141, 249, .8);
+  }
+
+  .layers:hover > .layers-text:nth-of-type(2) {
+    padding-left: 4rem;
+    transition: ease-in-out .7s;
+    color: rgba(216, 141, 249, .5);
+  }
+
+  .layers:hover > .layers-text:nth-of-type(3) {
+    padding-left: 6rem;
+    transition: ease-in-out .7s;
+    color: rgba(216, 141, 249, .2);
   }
 
   .digital-era-expl {
@@ -1219,7 +1277,7 @@ h2 {
   }
 
   .content {
-    grid-template-rows: 26rem auto 9vw 12vw auto 15rem 36vw auto 15rem auto auto auto auto auto;
+    grid-template-rows: 26rem auto 9vw 12vw auto 15rem 36vw auto 15rem auto auto auto  auto;
     grid-template-areas:
       'top top top top top basic basic basic basic basic issue'
       'top top top top top char char char char char char'
@@ -1232,8 +1290,7 @@ h2 {
       'empty2 empty2 var var var var big big big big big'
       'quote2 quote2 quote2 keys keys keys keys keys keys keys keys'
       'gif1 gif1 gif2 gif2 gif3 gif3 gif4 gif4 dig dig dig'
-      'empty3 empty3 layers layers layers layers layers empty4 empty4 empty4 empty4'
-      'empty3 empty3 layers layers layers layers layers empty4 empty4 empty4 empty4'
+      'empty3 empty3 layers layers layers layers layers layers empty4 empty4 empty4'
       'main4 main4 main4 main4 main4 main4 fut fut fut fut fut';
   }
 
@@ -1246,11 +1303,11 @@ h2 {
   }
 
   .seen-in-img-container:nth-of-type(1) {
-    margin-top: 100rem;
+    margin-top: 70rem;
   }
 
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 95rem;
+    margin-top: 80rem;
   }
 
 }
@@ -1262,11 +1319,26 @@ h2 {
   }
 
   .seen-in-img-container:nth-of-type(1) {
-    margin-top: 120rem;
+    margin-top: 70rem;
   }
 
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 90rem;
+    margin-top: 80rem;
+  }
+
+    .layer-hidden {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 13rem;
+    color: var(--colour1);
+  }
+
+  .layers-text {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 13rem;
+    color: var(--colour4);
+    position: absolute;
+    transition: ease-in-out .7s;
+    overflow: hidden;
   }
 }
 
