@@ -481,7 +481,7 @@ h2 {
 }
 
 .seen-in-img-container:nth-of-type(1) {
-  margin-top: 150vw;
+  margin-top: 80rem;
 }
 
 .seen-in-img-container::before {
@@ -623,7 +623,7 @@ h2 {
 }
 
 .bodoni-variations-item:nth-of-type(1) {
-  margin-top: 160vw;
+  margin-top: 70rem;
 }
 
 .variation-img {
@@ -870,11 +870,11 @@ h2 {
   }
 
   .seen-in-img-container:nth-of-type(1) {
-    margin-top: 60vw;
+    margin-top: 50rem;
   }
 
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 100vw;
+    margin-top: 80rem;
   }
 
   .effect-info {
@@ -970,11 +970,11 @@ h2 {
   }
 
   .seen-in-img-container:nth-of-type(1) {
-    margin-top: 30vw;
+    margin-top: 30rem;
   }
 
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 80vw;
+    margin-top: 70rem;
   }
 }
 
@@ -997,14 +997,6 @@ h2 {
       'dig dig dig dig dig dig'
       'main4 main4 main4 fut fut fut';
   }
-
-  .seen-in-img-container:nth-of-type(1) {
-    margin-top: 40vw;
-  }
-
-  .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 80vw;
-  }
 }
 
 @media only screen and (min-width: 900px) {
@@ -1026,6 +1018,13 @@ h2 {
       'main4 main4 main4 fut fut fut';
   }
 
+  .seen-in-img-container:nth-of-type(1) {
+    margin-top: 40rem;
+  }
+
+  .bodoni-variations-item:nth-of-type(1) {
+    margin-top: 80rem;
+  }
 }
 
 @media only screen and (min-width: 1040px) {
@@ -1148,11 +1147,11 @@ h2 {
   }
 
   .seen-in-img-container:nth-of-type(1) {
-    margin-top: 40vw;
+    margin-top: 60rem;
   }
 
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 50vw;
+    margin-top: 70rem;
   }
 
   .bodoni-rules {
@@ -1315,11 +1314,11 @@ h2 {
   }
 
   .seen-in-img-container:nth-of-type(1) {
-    margin-top: 20vw;
+    margin-top: 60rem;
   }
 
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 40vw;
+    margin-top: 65rem;
   }
 
 }
@@ -1327,11 +1326,11 @@ h2 {
 @media only screen and (min-width: 1350px) {
 
   .seen-in-img-container:nth-of-type(1) {
-    margin-top: 30vw;
+    margin-top: 65rem;
   }
 
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 40vw;
+    margin-top: 35rem;
   }
 }
 
@@ -1340,7 +1339,6 @@ h2 {
   .content {
     grid-template-rows: 26rem auto 6vw 12vw auto 15rem 36vw auto 15rem auto auto auto auto auto;
   }
-
 
   .layer-hidden {
     font-family: 'Bodoni Moda', serif;
