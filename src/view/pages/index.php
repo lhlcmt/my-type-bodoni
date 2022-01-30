@@ -107,7 +107,7 @@
 
   <div class="bodoni-seen-in">
     <?php foreach($seen_in_imgs as $seen_in_img):?>
-      <div class='seen-in-img-container parallax-bg' data-speed="1.5" >
+      <div class='seen-in-img-container parallax-bg' data-speed=".8" >
         <?php echo $seen_in_img['path']; ?>
       </div>
     <?php endforeach; ?>
@@ -145,7 +145,7 @@
 
   <div class="bodoni-variations">
     <?php foreach($var_svgs as $var_svg): ?>
-      <div class="bodoni-variations-item parallax-bg" data-speed=".8">
+      <div class="bodoni-variations-item parallax-bg" data-speed=".4">
         <?php echo $var_svg['path']; ?>
         <div class="variation-line"></div>
         <?php echo $var_svg['name']; ?>

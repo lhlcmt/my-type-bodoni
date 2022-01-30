@@ -481,7 +481,7 @@ h2 {
 }
 
 .seen-in-img-container:nth-of-type(1) {
-  margin-top: 140rem;
+  margin-top: 150vw;
 }
 
 .seen-in-img-container::before {
@@ -623,7 +623,7 @@ h2 {
 }
 
 .bodoni-variations-item:nth-of-type(1) {
-  margin-top: 145rem;
+  margin-top: 160vw;
 }
 
 .variation-img {
@@ -870,11 +870,11 @@ h2 {
   }
 
   .seen-in-img-container:nth-of-type(1) {
-    margin-top: 110rem;
+    margin-top: 60vw;
   }
 
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 150rem;
+    margin-top: 100vw;
   }
 
   .effect-info {
@@ -970,11 +970,11 @@ h2 {
   }
 
   .seen-in-img-container:nth-of-type(1) {
-    margin-top: 110rem;
+    margin-top: 30vw;
   }
 
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 145rem;
+    margin-top: 80vw;
   }
 }
 
@@ -999,11 +999,11 @@ h2 {
   }
 
   .seen-in-img-container:nth-of-type(1) {
-    margin-top: 110rem;
+    margin-top: 40vw;
   }
 
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 160rem;
+    margin-top: 80vw;
   }
 }
 
@@ -1148,11 +1148,11 @@ h2 {
   }
 
   .seen-in-img-container:nth-of-type(1) {
-    margin-top: 130rem;
+    margin-top: 40vw;
   }
 
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 145rem;
+    margin-top: 50vw;
   }
 
   .bodoni-rules {
@@ -1315,11 +1315,11 @@ h2 {
   }
 
   .seen-in-img-container:nth-of-type(1) {
-    margin-top: 120rem;
+    margin-top: 20vw;
   }
 
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 125rem;
+    margin-top: 40vw;
   }
 
 }
@@ -1327,11 +1327,11 @@ h2 {
 @media only screen and (min-width: 1350px) {
 
   .seen-in-img-container:nth-of-type(1) {
-    margin-top: 130rem;
+    margin-top: 30vw;
   }
 
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 140rem;
+    margin-top: 40vw;
   }
 }
 
@@ -1341,9 +1341,6 @@ h2 {
     grid-template-rows: 26rem auto 6vw 12vw auto 15rem 36vw auto 15rem auto auto auto auto auto;
   }
 
-  .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 120rem;
-  }
 
   .layer-hidden {
     font-family: 'Bodoni Moda', serif;
