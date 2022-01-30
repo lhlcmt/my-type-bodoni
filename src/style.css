@@ -481,7 +481,7 @@ h2 {
 }
 
 .seen-in-img-container:nth-of-type(1) {
-  margin-top: 80rem;
+  margin-top: 140rem;
 }
 
 .seen-in-img-container::before {
@@ -623,7 +623,7 @@ h2 {
 }
 
 .bodoni-variations-item:nth-of-type(1) {
-  margin-top: 95rem;
+  margin-top: 145rem;
 }
 
 .variation-img {
@@ -870,11 +870,11 @@ h2 {
   }
 
   .seen-in-img-container:nth-of-type(1) {
-    margin-top: 60rem;
+    margin-top: 110rem;
   }
 
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 110rem;
+    margin-top: 150rem;
   }
 
   .effect-info {
@@ -970,11 +970,11 @@ h2 {
   }
 
   .seen-in-img-container:nth-of-type(1) {
-    margin-top: 70rem;
+    margin-top: 110rem;
   }
 
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 105rem;
+    margin-top: 145rem;
   }
 }
 
@@ -996,6 +996,14 @@ h2 {
       'empty2 gif1 gif2 gif3 gif4 empty3'
       'dig dig dig dig dig dig'
       'main4 main4 main4 fut fut fut';
+  }
+
+  .seen-in-img-container:nth-of-type(1) {
+    margin-top: 110rem;
+  }
+
+  .bodoni-variations-item:nth-of-type(1) {
+    margin-top: 160rem;
   }
 }
 
@@ -1140,11 +1148,11 @@ h2 {
   }
 
   .seen-in-img-container:nth-of-type(1) {
-    margin-top: 100rem;
+    margin-top: 130rem;
   }
 
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 90rem;
+    margin-top: 145rem;
   }
 
   .bodoni-rules {
@@ -1307,11 +1315,11 @@ h2 {
   }
 
   .seen-in-img-container:nth-of-type(1) {
-    margin-top: 70rem;
+    margin-top: 120rem;
   }
 
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 90rem;
+    margin-top: 125rem;
   }
 
 }
@@ -1319,11 +1327,11 @@ h2 {
 @media only screen and (min-width: 1350px) {
 
   .seen-in-img-container:nth-of-type(1) {
-    margin-top: 90rem;
+    margin-top: 130rem;
   }
 
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 105rem;
+    margin-top: 140rem;
   }
 }
 
@@ -1333,15 +1341,11 @@ h2 {
     grid-template-rows: 26rem auto 6vw 12vw auto 15rem 36vw auto 15rem auto auto auto auto auto;
   }
 
-  .seen-in-img-container:nth-of-type(1) {
-    margin-top: 70rem;
-  }
-
   .bodoni-variations-item:nth-of-type(1) {
-    margin-top: 90rem;
+    margin-top: 120rem;
   }
 
-    .layer-hidden {
+  .layer-hidden {
     font-family: 'Bodoni Moda', serif;
     font-size: 13rem;
     color: var(--colour1);
