@@ -34,7 +34,7 @@
             <li><a class="footer-nav-item" href="#variations">VARIATIONS</a></li>
             <li><a class="footer-nav-item" href="#today">TODAY</a></li>
         </ul>
-        <a href="https://léah.be/" target="_blank" class="lhlcmt-mark">made with <img src="assets/heart-icon.svg" height="8" alt="love"> by lhlcmt</a>
+        <a href="https://lhlcmt.com/" target="_blank" class="lhlcmt-mark">made with <img src="assets/heart-icon.svg" height="8" alt="love"> by lhlcmt</a>
     </footer>
 
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
